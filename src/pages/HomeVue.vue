@@ -11,11 +11,13 @@ const telegramData = reactive({
 });
 
 onMounted(() => {
+  console.log('Telegram WebApp API:', window.Telegram?.WebApp);
   try {
     // Проверяем наличие Telegram WebApp API
     if (window.Telegram?.WebApp) {
       const tg = window.Telegram.WebApp;
       tg.ready(); // Уведомление Telegram, что WebApp готов
+      console.log(tg);
 
       const initDataUnsafe = tg.initDataUnsafe;
       telegramData.logs.push("Telegram WebApp initialized.");
