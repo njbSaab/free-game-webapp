@@ -2,6 +2,7 @@
   <h1 class="tw-text-2xl tw-font-bold tw-text-green-500">Hello, Tailwind!</h1>
   <v-btn variant="tonal"> HelloButton </v-btn>
 
+  <IsLoading />
 </template>
 
 <script setup></script>
