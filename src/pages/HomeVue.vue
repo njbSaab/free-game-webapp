@@ -61,7 +61,7 @@ onMounted(() => {
       </ul>
     </div>
 
-    <!-- Вывод логов -->
+    <!-- Вывод  логов -->
     <div v-if="telegramData.logs.length" class="tw-text-blue-500">
       <h2>Logs:</h2>
       <ul>
