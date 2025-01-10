@@ -8,29 +8,23 @@ const telegramData = reactive({
 });
 
 onMounted(() => {
-  const tg = window.Telegram.WebApp; // Доступ к Telegram WebApp API
+  if (window.Telegram?.WebApp) {
+    const tg = window.Telegram.WebApp;
+    tg.ready(); // Уведомление Telegram, что WebApp готов
 
-  if (tg) {
-    tg.ready(); // Уведомить Telegram, что WebApp загружен
+    const initDataUnsafe = tg.initDataUnsafe;
+    console.log("Telegram WebApp initialized:", initDataUnsafe);
 
-    // Получить данные о пользователе
-    telegramData.user = tg.initDataUnsafe?.user ?? null;
-    telegramData.initData = tg.initData;
+    // Проверка наличия данных о пользователе
+    if (initDataUnsafe?.user) {
+      telegramData.user = initDataUnsafe.user;
+    } else {
+      console.warn("No user data available.");
+    }
+
     telegramData.isInitialized = true;
-
-    console.log("Telegram WebApp initialized");
-    console.log("User data:", telegramData.user);
-    console.log("Init data:", telegramData.initData);
-
-    // Пример использования Telegram WebApp API
-    tg.MainButton.text = "Submit";
-    tg.MainButton.show();
-    tg.MainButton.onClick(() => {
-      console.log("MainButton clicked");
-      tg.MainButton.hide();
-    });
   } else {
-    console.error("Telegram WebApp not available");
+    console.error("Telegram WebApp not found. Are you running inside Telegram?");
   }
 });
 </script>
