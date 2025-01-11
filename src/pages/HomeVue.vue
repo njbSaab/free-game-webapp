@@ -55,7 +55,13 @@ onMounted(() => {
       Hello, {{ telegramData.user.first_name }}!
     </p>
     <p v-else-if="!telegramData.isInitialized">Initializing Telegram WebApp...</p>
-    <p v-else>No user data available.</p>
+    <p v-else>No user data available. Possible reasons:</p>
+    <ul v-if="!telegramData.user && telegramData.isInitialized" class="tw-text-yellow-500">
+      <li>1. You are using the Telegram App, and the bot did not provide user data.</li>
+      <li>2. The WebApp domain is not configured properly in the bot settings.</li>
+      <li>3. The app was opened without using the WebApp keyboard button.</li>
+      <li>4. Platform or device limitations (e.g., iOS or Android).</li>
+    </ul>
 
     <!-- Вывод ошибок -->
     <div v-if="telegramData.errors.length" class="tw-text-red-500 mt-4">
