@@ -2,6 +2,8 @@
 import { inject } from "vue";
 
 const telegramData = inject("telegramData"); // Получаем данные Telegram через inject
+logger.info("Telegram data:", telegramData);
+console.log("Telegram data:", telegramData);
 </script>
 
 <template>
@@ -12,7 +14,7 @@ const telegramData = inject("telegramData"); // Получаем данные Te
     <p v-if="telegramData.user">
       Hello, {{ telegramData.user.first_name }}!
     </p>
-    <p v-else>Loading Telegram data...</p>
+    <p v-else>Loading Telegram data...Nj</p>
 
     <!-- Вывод ошибок -->
     <div v-if="telegramData.errors.length" class="tw-text-red-500">

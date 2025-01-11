@@ -26,12 +26,15 @@ try {
     telegramData.user = tg.initDataUnsafe?.user || null;
     telegramData.initData = tg.initDataUnsafe || {};
     telegramData.isInitialized = true;
+    console.log(telegramData);
 
     if (!telegramData.user) {
       telegramData.errors.push("Нет данных о пользователе.");
+      console.log("Нет данных о пользователе.");
     }
   } else {
     telegramData.errors.push("Telegram WebApp API недоступен.");
+    console.log("Telegram WebApp API недоступен.");
   }
 } catch (error) {
   telegramData.errors.push(`Ошибка инициализации: ${error.message}`);
