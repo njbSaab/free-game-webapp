@@ -24,11 +24,11 @@
         </li>
       </ul>
     </div>
-    <div v-if="telegramData.user" class="mt-4">
+    <!-- <div v-if="telegramData.user" class="mt-4">
       <h3>User Information:</h3>
       <p>Name: {{ telegramData.user.first_name }}</p>
       <p>Username: {{ telegramData.user.username }}</p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -72,6 +72,8 @@ export default {
 
     onMounted(() => {
       console.log("Checking Telegram WebApp API availability...");
+      console.log(telegramData.user);
+      
       try {
         if (window.Telegram && window.Telegram.WebApp) {
           const tg = window.Telegram.WebApp;
