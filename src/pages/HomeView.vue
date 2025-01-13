@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home hidden">
     <Banner />
     <CarouselMini :data="carouselCategoryDataRef" />
     <Carousel :data="carouselNewRef" />
@@ -73,7 +73,7 @@ export default {
     onMounted(() => {
       console.log("Checking Telegram WebApp API availability...");
       console.log(telegramData.user);
-      
+
       try {
         if (window.Telegram && window.Telegram.WebApp) {
           const tg = window.Telegram.WebApp;
