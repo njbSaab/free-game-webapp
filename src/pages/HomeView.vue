@@ -8,7 +8,7 @@
     <Info />
 
     <!-- Telegram Debug Information -->
-    <div v-if="telegramData.errors.length" class="text-red-500 mt-4">
+    <!-- <div v-if="telegramData.errors.length" class="text-red-500 mt-4">
       <h2>Errors:</h2>
       <ul>
         <li v-for="(error, index) in telegramData.errors" :key="index">
@@ -23,7 +23,7 @@
           {{ log }}
         </li>
       </ul>
-    </div>
+    </div> -->
     <!-- <div v-if="telegramData.user" class="mt-4">
       <h3>User Information:</h3>
       <p>Name: {{ telegramData.user.first_name }}</p>
@@ -72,7 +72,6 @@ export default {
 
     onMounted(() => {
       console.log("Checking Telegram WebApp API availability...");
-      console.log(telegramData.user);
 
       try {
         if (window.Telegram && window.Telegram.WebApp) {
@@ -85,7 +84,9 @@ export default {
           const initDataUnsafe = tg.initDataUnsafe;
           telegramData.logs.push("Telegram WebApp initialized successfully.");
           telegramData.logs.push(JSON.stringify(initDataUnsafe));
-
+          
+          console.log(telegramData.user);
+          console.log(telegramData.logs.length);
           // Проверка пользователя
           if (initDataUnsafe?.user) {
             telegramData.user = initDataUnsafe.user;
