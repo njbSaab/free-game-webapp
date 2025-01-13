@@ -82,26 +82,38 @@ export default {
           console.log("Telegram WebApp API initialized:", tg);
 
           const initDataUnsafe = tg.initDataUnsafe;
+
+          // Добавляем информацию о Telegram WebApp в логи
           telegramData.logs.push("Telegram WebApp initialized successfully.");
-          telegramData.logs.push(JSON.stringify(initDataUnsafe));
-          
-          console.log(telegramData.user);
-          console.log(telegramData.logs.length);
-          // Проверка пользователя
+          telegramData.logs.push("InitDataUnsafe: " + JSON.stringify(initDataUnsafe));
+
+          // Проверяем данные о пользователе
           if (initDataUnsafe?.user) {
             telegramData.user = initDataUnsafe.user;
             telegramData.logs.push(`User data: ${JSON.stringify(initDataUnsafe.user)}`);
+
+            // Выводим данные пользователя в консоль
+            console.log("User data from Telegram WebApp:", initDataUnsafe.user);
           } else {
             telegramData.errors.push("No user data found.");
+            console.error("No user data available in initDataUnsafe.");
           }
 
           telegramData.isInitialized = true;
         } else {
-          telegramData.errors.push("Telegram WebApp API is not available. Are you running inside Telegram?");
+          telegramData.errors.push(
+            "Telegram WebApp API is not available. Are you running inside Telegram?"
+          );
+          console.error("Telegram WebApp API is not available.");
         }
       } catch (error) {
         telegramData.errors.push(`Initialization error: ${error.message}`);
+        console.error("Initialization error:", error);
       }
+
+      // Выводим логи в консоль для отладки
+      console.log("Telegram Data Logs:", telegramData.logs);
+      console.log("Telegram Data Errors:", telegramData.errors);
     });
 
     return {
@@ -115,5 +127,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
