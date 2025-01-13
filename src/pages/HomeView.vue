@@ -1,5 +1,5 @@
 <template>
-  <div class="home hidden">
+  <div class="home tw-overflow-x-hidden">
     <Banner />
     <CarouselMini :data="carouselCategoryDataRef" />
     <Carousel :data="carouselNewRef" />
