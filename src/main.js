@@ -1,6 +1,7 @@
 // Plugins
 import { registerPlugins } from "@/plugins";
-import "./styles/tailwind.css";
+import "@/styles/styles.scss";
+import "@/styles/tailwind.css";
 import { VueTelegramPlugin } from "vue-tg"; // Импортируем плагин
 
 // Components
