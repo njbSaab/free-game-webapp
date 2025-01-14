@@ -17,9 +17,9 @@
         <div
           class="js-cg-carousel-item cg-carousel-item cg-carousel-layer-0 selected"
         >
-          <div class="game-carousel-item">
+          <div class="game-carousel-item relative">
             <div class="img-wrapper relative">
-              <picture class="relative cicrle-img">
+              <picture class="relative">
                 <source
                   :data-srcset="carouselImage.webp"
                   type="image/webp"
@@ -70,6 +70,9 @@
                   <span class="text-white fs-16">무료로 플레이</span>
                 </a>
               </div>
+            </div>
+            <div class="cirlcle-wrapp absolute w-[100%] h-[100%] z-0">
+              <div class="cicrle-img w-[100px] h-[150px]"> </div>
             </div>
           </div>
         </div>

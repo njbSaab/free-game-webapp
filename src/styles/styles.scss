@@ -48,6 +48,13 @@ a:hover {
     0 0 6px rgba(0, 149, 255, 0.5),
     0 0 10px rgba(141, 83, 233, 0.7);
 }
+.logo-wrapper a {
+  border-radius: 50%;
+}
+.logo-wrapper a:hover {
+  scale: 1.1;
+  transition: 0.3s ease-in;
+}
 .btn.btn-nj-primary {
   background: linear-gradient(
     90deg,
@@ -91,6 +98,14 @@ a:hover {
   backdrop-filter: blur(60px);
   border-radius: 100%;
 }
+.cirlcle-wrapp {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .cicrle-img {
   position: relative;
 }
@@ -103,10 +118,10 @@ a:hover {
     0 0 40px 20px rgba(0, 149, 255, 0.8),
     0 0 80px 40px rgba(0, 149, 255, 0.8),
     0 0 100px 70px rgba(0, 149, 255, 0.8);
-  width: 180%;
-  height: 80px;
+  width: 300%;
+  height: 100px;
   top: 50%;
-  left: 0;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
   backdrop-filter: blur(60px);
