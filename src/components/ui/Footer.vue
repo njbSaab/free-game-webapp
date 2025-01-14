@@ -5,8 +5,8 @@
         <div class="logo-wrapper">
           <img
             class="logo"
-            src="https://top4winner.top/apple-fortune/img/logo.png"
-            alt=""
+            src="https://static.vecteezy.com/system/resources/thumbnails/019/982/223/small/dark-style-poker-card-element-png.png"
+            alt="logo"
           />
         </div>
         <span class="footer-line"></span>

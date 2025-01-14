@@ -4,19 +4,18 @@
   >
     <div class="page-header-heading w-[90%] mx-auto lg:w-1/2">
       <h1 class="fs-25 c-white text-default">무료 온라인 슬롯 및 카지노 게임</h1>
-      <!-- intro text -->
+      <!-- Описание -->
       <div class="desc fs-16 mt-4">
-        슬롯 머신 및 기타 유형의 카지노 게임을 무료로 즐겨보세요. ✅ 다운로드
-        및 등록이 필요하지 않습니다. ✅ 데모 모드에서 리스크 없이 플레이
-        해보세요.
+        슬롯 머신 및 기타 유형의 카지노 게임을 무료로 즐겨보세요. ✅ 다운로드 및 등록이
+        필요하지 않습니다. ✅ 데모 모드에서 리스크 없이 플레이 해보세요.
       </div>
     </div>
 
-    <div class="page-heading-carousel page-heading-carousel-static w-full sm:w-2/3 lg:w-full">
+    <div
+      class="page-heading-carousel page-heading-carousel-static w-full sm:w-2/3 lg:w-full"
+    >
       <div class="game-list-top-carousel-wrapper mx-4 sm:mx-0 lg:mx-0">
-        <div
-          class="js-cg-carousel-item cg-carousel-item cg-carousel-layer-0 selected"
-        >
+        <div class="js-cg-carousel-item cg-carousel-item cg-carousel-layer-0 selected">
           <div class="game-carousel-item relative">
             <div class="img-wrapper relative">
               <picture class="relative">
@@ -25,15 +24,9 @@
                   type="image/webp"
                   :srcset="carouselImage.webp"
                 />
-                <img
-                  alt="Divine Wine"
-                  height="220"
-                  :src="carouselImage.jpg"
-                />
+                <img alt="Divine Wine" height="220" :src="carouselImage.jpg" />
               </picture>
-              <span
-                class="game-item-promo-label label-purple absolute z-index-1"
-              >
+              <span class="game-item-promo-label label-purple absolute z-index-1">
                 이 주의 게임 #1
               </span>
 
@@ -43,9 +36,7 @@
                 <span class="title-ico-wrapper">
                   <span>
                     <span class="game-name relative mb-xs">{{ game.name }}</span>
-                    <span
-                      class="game-provider-name relative ml-xs mb-xs text-white pl-2"
-                    >
+                    <span class="game-provider-name relative ml-xs mb-xs text-white pl-2">
                       {{ game.provider }}
                     </span>
                   </span>
@@ -58,21 +49,18 @@
               </div>
               <div class="btn-wrapper flex gap-2 absolute bottom-4">
                 <a
-                  href=""
+                  href="#"
                   class="btn btn-outline w-1/2 btn-border-white js-btn-for-real mt-s fs-16"
                 >
                   <span class="text-white fs-16">무료로 플레이</span>
                 </a>
-                <a
-                  class="btn btn-nj-accent w-1/2 mt-s text-default"
-                  href=""
-                >
+                <a class="btn btn-nj-accent w-1/2 mt-s text-default" href="#">
                   <span class="text-white fs-16">무료로 플레이</span>
                 </a>
               </div>
             </div>
             <div class="cirlcle-wrapp absolute w-[100%] h-[100%] z-0">
-              <div class="cicrle-img w-[100px] h-[150px]"> </div>
+              <div class="cicrle-img w-[100px] h-[150px]"></div>
             </div>
           </div>
         </div>
@@ -81,29 +69,22 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { reactive } from "vue";
 
-export default {
-  name: "Banner",
-  setup() {
-    const carouselImage = reactive({
-      webp:
-        "https://cdn.vectorstock.com/i/500p/50/33/play-games-have-fun-neon-sign-with-game-pad-vector-38395033.jpg",
-      jpg: "https://cdn.vectorstock.com/i/500p/50/33/play-games-have-fun-neon-sign-with-game-pad-vector-38395033.jpg",
-    });
+// Данные изображения
+const carouselImage = reactive({
+  webp:
+    "https://cdn.vectorstock.com/i/500p/50/33/play-games-have-fun-neon-sign-with-game-pad-vector-38395033.jpg",
+  jpg:
+    "https://cdn.vectorstock.com/i/500p/50/33/play-games-have-fun-neon-sign-with-game-pad-vector-38395033.jpg",
+});
 
-    const game = reactive({
-      name: "Divine Wine",
-      provider: "Atomic Slot Lab",
-    });
-
-    return {
-      carouselImage,
-      game,
-    };
-  },
-};
+// Данные игры
+const game = reactive({
+  name: "Divine Wine",
+  provider: "Atomic Slot Lab",
+});
 </script>
 
 <style scoped>

@@ -1,17 +1,17 @@
 <template>
   <div class="category-carousel">
-    <!-- Элементы карусели -->
-    <div class="carousel carousel-center w-full">
+    <!-- Проверка на наличие элементов -->
+    <div v-if="items.length" class="carousel carousel-center w-full">
       <div
         class="carousel-item w-[25%] flex-shrink-0 mx-1 flex flex-col items-center justify-center gap-1 bg-nj-card rounded-md py-2 px-1"
-        v-for="(item, index) in data.items"
+        v-for="(item, index) in items"
         :key="index"
       >
         <div class="game-icon">
           <!-- Проверка: SVG как строка или URL -->
           <div
             class="svg-icon text-white"
-            v-if="item.image.includes('<svg')"
+            v-if="item.image && item.image.includes('<svg')"
             v-html="item.image"
           ></div>
           <img v-else :src="item.image" alt="Game Icon" />
@@ -22,29 +22,23 @@
         </span>
       </div>
     </div>
+    <p v-else class="text-center text-nj-white">No categories available</p>
   </div>
 </template>
 
-<script>
+<script setup>
 import { computed } from "vue";
 
-export default {
-  name: "CategoryCarousel",
-  props: {
-    data: {
-      type: Object,
-      required: true,
-    },
+// Определение пропсов через defineProps
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
   },
-  setup(props) {
-    // Компьютед-свойство для данных (если потребуется дополнительная обработка)
-    const items = computed(() => props.data.items);
+});
 
-    return {
-      items,
-    };
-  },
-};
+// Компьютед-свойство для обработки данных
+const items = computed(() => props.data?.items || []);
 </script>
 
 <style scoped>

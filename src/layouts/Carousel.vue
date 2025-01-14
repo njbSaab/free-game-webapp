@@ -9,11 +9,8 @@
         />
         <h1 class="text-lg carousel-title font-bold">{{ data.title.text }}</h1>
       </div>
-      <router-link to="/all-slots" class="btn btn-nj-primary text-white">
-        <span class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 18L7 18L7 6L9 6L9 18M15 6L17 6L17 18L15 18L15 6"><animate fill="freeze" attributeName="d" dur="0.6s" keyTimes="0;0.66;1" values="M9 18L7 18L7 6L9 6L9 18M15 6L17 6L17 18L15 18L15 6;M13 15L8 18L8 6L13 9L13 15M13 9L18 12L18 12L13 15L13 9;M13 15L8 18L8 6L13 9L13 9M13 9L18 12L18 12L13 15L13 15"/></path></svg>
-        </span>
-        {{ data.button.text }}
+      <router-link to="/all-games" class="btn btn-nj-primary text-white">
+        <span>See All Games</span>
       </router-link>
     </div>
 
@@ -25,9 +22,7 @@
         @click="goToGame(item)"
       >
         <div class="game-carousel-item rounded-md relative cursor-pointer">
-          <span class="play">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 18L7 18L7 6L9 6L9 18M15 6L17 6L17 18L15 18L15 6"><animate fill="freeze" attributeName="d" dur="0.6s" keyTimes="0;0.66;1" values="M9 18L7 18L7 6L9 6L9 18M15 6L17 6L17 18L15 18L15 6;M13 15L8 18L8 6L13 9L13 15M13 9L18 12L18 12L13 15L13 9;M13 15L8 18L8 6L13 9L13 9M13 9L18 12L18 12L13 15L13 15"/></path></svg>
-          </span>
+          <span class="play">▶</span>
           <img :src="item.image" alt="Game Image" class="rounded-md cursor-pointer" />
         </div>
       </div>
@@ -35,41 +30,34 @@
   </div>
 </template>
 
-<script>
-import { ref } from "vue";
+<script setup>
 import { useRouter } from "vue-router";
+import { useGameStore } from "@/stores/gameStore";
 
-export default {
-  name: "GameCarousel",
-  props: {
-    data: {
-      type: Object,
-      required: true,
-    },
+// Получение пропсов
+defineProps({
+  data: {
+    type: Object,
+    required: true,
   },
-  setup(props) {
-    const router = useRouter();
+});
 
-    const goToGame = (item) => {
-      console.log("Navigating to:", `/game/${item.id}`);
-      if (router) {
-        router.push({
-          path: `/game/${item.id}`,
-          query: { iframe: item.iframeSrc },
-        });
-      } else {
-        console.error("Router instance is not available");
-      }
-    };
+// Маршрутизатор и состояние игры
+const router = useRouter();
+const gameStore = useGameStore();
 
-    return {
-      data: props.data,
-      goToGame,
-    };
-  },
+// Обработчик перехода к игре
+const goToGame = (item) => {
+  console.log("Navigating to game:", item);
+  if (!item.id) {
+    console.error("Invalid game item, missing ID:", item);
+    return;
+  }
+
+  router.push({ name: "SingleGame", params: { id: item.id } });
 };
 </script>
 
 <style scoped>
-/* Добавьте стили, если требуется */
+/* Добавьте стили для оформления */
 </style>

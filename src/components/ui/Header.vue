@@ -43,10 +43,8 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: "HeaderComponent",
-};
+<script setup>
+
 </script>
 
 <style scoped>

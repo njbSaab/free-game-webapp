@@ -7,14 +7,19 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    DetailsCard: typeof import('./src/components/ui/card/DetailsCard.vue')['default']
     Footer: typeof import('./src/components/ui/Footer.vue')['default']
     GameCard: typeof import('./src/components/ui/GameCard.vue')['default']
+    GameCardFoter: typeof import('./src/components/ui/card/GameCardFoter.vue')['default']
     Header: typeof import('./src/components/ui/Header.vue')['default']
+    IconCheck: typeof import('./src/components/ui/card/IconCheck.vue')['default']
     Info: typeof import('./src/components/ui/Info.vue')['default']
+    InfoGameCard: typeof import('./src/components/ui/card/InfoGameCard.vue')['default']
     IsLoading: typeof import('./src/components/ui/IsLoading.vue')['default']
     IsLoadingBalls: typeof import('./src/components/ui/IsLoadingBalls.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SubscribeForm: typeof import('./src/components/ui/SubscribeForm.vue')['default']
+    TutorialCard: typeof import('./src/components/ui/card/TutorialCard.vue')['default']
   }
 }
