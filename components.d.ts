@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     DetailsCard: typeof import('./src/components/ui/card/DetailsCard.vue')['default']
     Footer: typeof import('./src/components/ui/Footer.vue')['default']
-    GameCard: typeof import('./src/components/ui/GameCard.vue')['default']
     GameCardFoter: typeof import('./src/components/ui/card/GameCardFoter.vue')['default']
     Header: typeof import('./src/components/ui/Header.vue')['default']
     IconCheck: typeof import('./src/components/ui/card/IconCheck.vue')['default']
