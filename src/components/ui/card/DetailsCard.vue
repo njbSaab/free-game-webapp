@@ -36,7 +36,6 @@
           <!-- Разработчик -->
           <li
             class="flex justify-between"
-            :class="{ 'opacity-50': !details.bonusParches }"
           >
             <p class="text-nj-white-50">Разработчик игр</p>
             <span class="line-transparent"></span>
@@ -126,7 +125,7 @@ defineProps({
   },
   details: {
     type: Object,
-    required: true,
+    default: () => ({})
   },
 });
 </script>

@@ -1,5 +1,6 @@
 // Plugins
 import { createPinia } from "pinia";
+import { autoAnimatePlugin } from "@formkit/auto-animate/vue";
 import { registerPlugins } from "@/plugins";
 import "@/styles/styles.scss";
 import "@/styles/tailwind.css";
@@ -18,10 +19,11 @@ const app = createApp(App);
 const pinia = createPinia();
 
 app.use(pinia);
+app.use(autoAnimatePlugin);
 app.use(router);
 
-console.log("Pinia initialized:", pinia);
-console.log("Router initialized:", router);
+console.log("Anim initialized:", autoAnimatePlugin);
+
 app.use(VueTelegramPlugin);
 
 registerPlugins(app);

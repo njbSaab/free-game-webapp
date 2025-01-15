@@ -10,6 +10,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@mdi/font": "7.4.47",
     "roboto-fontface": "*",
     "vue": "^3.4.31",

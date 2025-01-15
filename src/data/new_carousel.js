@@ -54,7 +54,7 @@ export const carouselNew = {
         "https://static.casino.guru/pict/1008916/Rich-Wilde-and-the-Pearls-of-Vishnu.png?timestamp=1731663567000&imageDataId=1067328&width=320&height=247&webp=true&compressWebp=85",
       description:
         "데모 모드에서 무료로 Rich Wilde and the Pearls of Vishnu 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
-      CardDetails: {
+      cardDetails: {
         developers: "1xbet",
         jacpot: false,
         freeSpeen: true,
@@ -87,7 +87,7 @@ export const carouselNew = {
         "https://play-prodcopy.oryxgaming.com/agg_plus_public/launch/wallets/OD1/games/ASL_DIW_EU/open?playMode=FUN&languageCode=en",
       image:
         "https://static.casino.guru/pict/1018369/Divine-Wine.png?timestamp=1732519541000&imageDataId=1078031&width=320&height=247&webp=true&compressWebp=85",
-      CardDetails: {
+      cardDetails: {
         developers: "1xbet",
         jacpot: false,
         freeSpeen: true,
@@ -122,7 +122,7 @@ export const carouselNew = {
         "https://static.casino.guru/pict/981347/Might-of-Freya-Megaways.png?timestamp=1728986427000&imageDataId=1034747&width=320&height=247&webp=true&compressWebp=85",
       description:
         "데모 모드에서 무료로 Divine Wine 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
-      CardDetails: {
+      cardDetails: {
         developers: "1xbet",
         jacpot: false,
         freeSpeen: true,
@@ -157,7 +157,7 @@ export const carouselNew = {
         "https://static.casino.guru/pict/1013297/Big-Bass-Xmas-Xtreme.png?timestamp=1732019833000&imageDataId=1072254&width=320&height=247&webp=true&compressWebp=85",
       description:
         "데모 모드에서 무료로 Big Bass Xmas Xtreme 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
-      CardDetails: {
+      cardDetails: {
         developers: "1xbet",
         jacpot: false,
         freeSpeen: true,
@@ -192,7 +192,7 @@ export const carouselNew = {
         "https://static.casino.guru/pict/1013342/Duel-at-Dawn.png?timestamp=1732022013000&imageDataId=1072316&width=320&height=247&webp=true&compressWebp=85",
       description:
         "데모 모드에서 무료로 Duel at Dawn 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
-      CardDetails: {
+      cardDetails: {
         developers: "1xbet",
         jacpot: false,
         freeSpeen: true,
@@ -226,7 +226,7 @@ export const carouselNew = {
         "https://static.casino.guru/pict/1013379/Muddy-Waters.png?timestamp=1732022759000&imageDataId=1072348&width=320&height=247&webp=true&compressWebp=85",
       description:
         "데모 모드에서 무료로 Muddy Waters 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
-      CardDetails: {
+      cardDetails: {
         developers: "1xbet",
         jacpot: false,
         freeSpeen: true,
@@ -261,7 +261,7 @@ export const carouselNew = {
         "https://static.casino.guru/pict/981336/Eternal-Empress---Freeze-Time.png?timestamp=1728986241000&imageDataId=1034731&width=320&height=247&webp=true&compressWebp=85",
       description:
         "데모 모드에서 무료로 Eternal Empress – Freeze Time 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
-      CardDetails: {
+      cardDetails: {
         developers: "1xbet",
         jacpot: false,
         freeSpeen: true,

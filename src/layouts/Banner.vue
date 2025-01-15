@@ -12,9 +12,9 @@
     </div>
 
     <div
-      class="page-heading-carousel page-heading-carousel-static w-full sm:w-2/3 lg:w-full"
+      class="page-heading-carousel page-heading-carousel-static w-full sm:w-2/3 lg:w-full pb-[40px]"
     >
-      <div class="game-list-top-carousel-wrapper mx-4 sm:mx-0 lg:mx-0">
+      <div class="game-list-top-carousel-wrapper mx-2 sm:mx-0 lg:mx-0">
         <div class="js-cg-carousel-item cg-carousel-item cg-carousel-layer-0 selected">
           <div class="game-carousel-item relative">
             <div class="img-wrapper relative">
@@ -66,11 +66,20 @@
         </div>
       </div>
     </div>
+
+    <CarouselMini
+      v-if="carouselCategoryDataRef && carouselCategoryDataRef.items.length"
+      :data="carouselCategoryDataRef"
+    />
   </div>
+
 </template>
 
 <script setup>
-import { reactive } from "vue";
+import { reactive,ref } from "vue";
+import { carouselCategoryData } from "../data/category_carousel";
+import CarouselMini from "@/layouts/CarouselMini.vue"
+const carouselCategoryDataRef = ref(carouselCategoryData);
 
 // Данные изображения
 const carouselImage = reactive({
@@ -88,5 +97,7 @@ const game = reactive({
 </script>
 
 <style scoped>
-/* Добавьте стили, если требуется */
+.category-carousel{
+  width: 100%;
+}
 </style>

@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 24 24">
+  <div class="isLoading flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stop-color="oklch(51.01% 0.274 263.83)" />
           <stop offset="25%" stop-color="oklch(53.18% 0.28 296.97)" />
           <stop offset="50%" stop-color="oklch(47.66% 0.246 305.88)" />
-          <stop offset="75%" stop-color="oklch(69.02% 0.277 332.77)" />
-          <stop offset="100%" stop-color="oklch(61.42% 0.238 15.34)" />
+          <stop offset="75%" stop-color="rgba(0, 149, 255, 0.5)" />
+          <stop offset="100%" stop-color="rgba(0, 183, 255, 0.7))" />
         </linearGradient>
       </defs>
       <path
@@ -31,5 +31,11 @@
 </script>
 
 <style lang="scss" scoped>
-
+.isLoading{
+  position: fixed;
+	z-index: 99999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 </style>

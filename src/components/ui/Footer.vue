@@ -326,8 +326,7 @@
               Подписаться
             </a>
           </div>
-        </div>
-        <div class="form-control">
+          <div class="form-control">
           <label class="cursor-pointer flex gap-4 label">
             <input
               type="checkbox"
@@ -338,6 +337,7 @@
               >Мне не менее 18 лет, и я могу легально играть в казино.</span
             >
           </label>
+        </div>
         </div>
       </form>
 
