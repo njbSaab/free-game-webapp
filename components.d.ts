@@ -16,6 +16,7 @@ declare module 'vue' {
     InfoGameCard: typeof import('./src/components/ui/card/InfoGameCard.vue')['default']
     IsLoading: typeof import('./src/components/ui/IsLoading.vue')['default']
     IsLoadingBalls: typeof import('./src/components/ui/IsLoadingBalls.vue')['default']
+    MenuNav: typeof import('./src/components/ui/navigation/MenuNav.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SubscribeForm: typeof import('./src/components/ui/SubscribeForm.vue')['default']

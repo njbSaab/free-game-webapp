@@ -19,7 +19,8 @@ body {
 
 .nj-dark {
   background-color: #1b2642;
-  box-shadow: 0 5px 10px rgba(0, 149, 255, 0.8);
+}
+.header.nj-dark {
 }
 // canvas[Attributes Style] {
 //   aspect-ratio: auto 100% / 100%;
@@ -99,6 +100,9 @@ a:hover {
 .text-nj-white-50 {
   color: rgba(255, 255, 255, 0.5);
 }
+.text-nj-white-80 {
+  color: rgba(255, 255, 255, 0.8);
+}
 .text-nj-white {
   color: rgba(255, 255, 255, 1);
 }
@@ -140,8 +144,8 @@ a:hover {
     0 0 40px 20px rgba(0, 149, 255, 0.8),
     0 0 80px 40px rgba(0, 149, 255, 0.8),
     0 0 100px 70px rgba(0, 149, 255, 0.8);
-  width: 300%;
-  height: 100px;
+  width: 150%;
+  height: 0px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -461,11 +465,12 @@ a:hover {
 }
 
 /*! single-game  */
-
+header.nj-dark,
 footer.nj-dark {
-  box-shadow: 0px -5px 10px rgba(0, 149, 255, 0.8);
+  box-shadow: 0px 0px 25px rgba(0, 149, 255, 0.8);
 }
 
+header .footer-line,
 footer .footer-line {
   background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.2) 9.92%, transparent);
   display: inline-block;
@@ -473,6 +478,7 @@ footer .footer-line {
   height: 1px;
   margin-left: 25px;
 }
+header .btn.btn-outline,
 footer .btn.btn-outline {
   height: 2rem !important;
   min-height: 2rem !important;
@@ -482,6 +488,7 @@ footer .btn.btn-outline {
     width: 20px;
   }
 }
+header .btn.btn-outline:hover,
 footer .btn.btn-outline:hover {
   box-shadow:
     0 0 10px rgba(0, 183, 255, 0.7),
@@ -489,7 +496,8 @@ footer .btn.btn-outline:hover {
     0 0 10px rgba(141, 83, 233, 0.7);
 }
 
-footer {
+footer,
+header {
   border-radius: 12px 12px 0 0;
   label {
     text-shadow: 0 0 10px rgba(0, 149, 255, 0.8);
