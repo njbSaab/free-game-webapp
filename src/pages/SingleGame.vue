@@ -48,6 +48,7 @@ const isLoading = ref(true); // Состояние загрузки
 const id = computed(() => parseInt(route.params.id, 10));
 
 const currentGame = computed(() => gameStore.currentGame);
+
 onMounted(() => {
   isLoading.value = true; // Устанавливаем состояние загрузки
 

@@ -422,6 +422,15 @@ a:hover {
   cursor: pointer;
   transition: 0.1s ease-in;
 }
+.nj-hover-shadow:hover {
+  box-shadow: 0 0 15px rgba(0, 149, 255, 0.5);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease-in-out;
+}
+.nj-hover-scale:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
 .card-request-game:hover {
   box-shadow: 0 0 15px rgba(0, 149, 255, 0.5);
   backdrop-filter: blur(10px);

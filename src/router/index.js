@@ -5,8 +5,17 @@ import AllGames from "@/pages/AllGames.vue";
 
 const routes = [
   { path: "/", component: HomeView },
-  { path: "/game/:id", name: "SingleGame", component: SingleGame },
-  { path: "/all-games", component: AllGames },
+  {
+    path: "/game/:id",
+    name: "SingleGame",
+    component: SingleGame,
+    props: true,
+  },
+  {
+    path: "/all-games",
+    name: "AllGames",
+    component: AllGames,
+  },
 ];
 
 const router = createRouter({

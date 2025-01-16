@@ -1,5 +1,5 @@
 <template>
-  <div class="game-carousel my-10">
+  <div class="game-carousel my-10" v-auto-animate>
     <div class="carousel-title px-4 flex justify-between items-center mb-6">
       <div class="carousel-title-wrapper flex items-center pr-[10px] space-x-2">
         <img
@@ -9,7 +9,10 @@
         />
         <h1 class="text-lg carousel-title font-bold">{{ data.title.text }}</h1>
       </div>
-      <router-link to="/all-games" class="btn btn-nj-primary text-white">
+      <router-link
+        :to="{ name: 'AllGames', query: { category: data.title.text.toLowerCase() } }"
+        class="btn btn-nj-primary text-white"
+      >
         <span>See All Games</span>
       </router-link>
     </div>

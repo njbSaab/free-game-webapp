@@ -17,7 +17,7 @@
       <p class="text-sm text-gray-500">{{ cardData?.description || 'No Description' }}</p>
     </div>
     <button
-      class="btn btn-primary mt-4 md:mt-0"
+      class="btn btn-nj-primary mb-2 md:mt-0 w-2/3 mx-auto"
       @click="onButtonClick"
       v-if="cardData?.buttonText"
     >
