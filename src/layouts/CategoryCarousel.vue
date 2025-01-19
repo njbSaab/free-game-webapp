@@ -29,7 +29,7 @@ const selectCategory = (categoryName) => {
 </script>
 
 <template>
-  <div class="category-carousel" v-auto-animate>
+  <div class="category-carousel my-4" v-auto-animate>
     <!-- Проверка на наличие элементов -->
     <div v-if="items.length" class="carousel carousel-center w-full py-[15px]">
       <div
