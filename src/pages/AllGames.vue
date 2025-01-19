@@ -1,91 +1,92 @@
 <script setup>
-import { useRouter, useRoute } from "vue-router";
+import { computed, onMounted, watch } from "vue";
+import { useRouter } from "vue-router";
 import { useCategoryStore } from "@/stores/categoryStore";
-import { useGameStore } from "@/stores/gameStore";
+import CategoryCarousel from "@/layouts/CategoryCarousel.vue";
 import Banner from "@/layouts/Banner.vue";
-import IsLoadingBalls from "@/components/ui/IsLoadingBalls.vue";
-import CategoryCarousel from "@/layouts/CarouselMini.vue";
 
 const router = useRouter();
-const route = useRoute();
 const categoryStore = useCategoryStore();
-const gameStore = useGameStore();
-const isLoading = ref(true);
 
-// Загрузка игр в хранилище категорий
+const games = computed(() => categoryStore.currentCategoryGames);
+const categories = computed(() => categoryStore.categories);
+
+// Обработка изменения маршрута
 onMounted(() => {
-  isLoading.value = true;
-  categoryStore.setGames(gameStore.allGames); // Загружаем игры в категории
-  setTimeout(() => {
-    isLoading.value = false;
-  }, 300);
+  const categoryFromRoute = router.currentRoute.value.query.category || "All";
+  categoryStore.setCurrentCategory(categoryFromRoute);
 });
 
-// Обработчик смены категории
-const filterByCategory = (categoryName) => {
-  categoryStore.setCurrentCategory(categoryName);
-  router.push({
-    name: "AllGames",
-    query: { category: categoryName === "All" ? undefined : categoryName },
-  });
-};
-
-// Синхронизация текущей категории из URL
 watch(
-  () => route.query.category,
+  () => router.currentRoute.value.query.category,
   (newCategory) => {
-    categoryStore.setCurrentCategory(newCategory || "All");
+    if (newCategory) {
+      categoryStore.setCurrentCategory(newCategory);
+    }
   }
 );
 
-// Получение отфильтрованных игр
-const filteredGames = computed(() => categoryStore.filteredGames);
+watch(
+  () => games.value,
+  (newGames) => {
+    console.log("Games updated:", newGames);
+  }
+);
 
-// Метод перехода к конкретной игре
+const filterByCategory = (categoryName) => {
+  categoryStore.setCurrentCategory(categoryName);
+  router.push({ name: "AllGames", query: { category: categoryName.toLowerCase() } });
+};
+
+// Метод для перехода к игре
 const goToGame = (game) => {
-  router.push({ name: "SingleGame", params: { id: game.id } });
+  if (game?.id) {
+    router.push({ name: "SingleGame", params: { id: game.id } });
+  } else {
+    console.error("Game ID is missing:", game);
+  }
 };
 </script>
 
 <template>
   <div class="all-games min-h-screen" v-auto-animate>
+    <!-- Баннер -->
     <Banner />
 
-    <!-- Фильтры категорий -->
-    <div class="filters px-2 py-4">
-      <CategoryCarousel
-        :data="{ items: categoryStore.categories }"
-        @categorySelected="filterByCategory"
-      />
-    </div>
+    <!-- Карусель категорий -->
+    <CategoryCarousel
+      :data="{ items: categories }"
+      @categorySelected="filterByCategory"
+    />
 
+    <!-- Заголовок страницы -->
     <h1 class="page-title px-2 text-xl">
-      All Games <span class="text-nj-white-50">{{ filteredGames.length }}</span>
+      {{ categoryStore.currentCategory }} Games
+      <span class="text-nj-white-50">{{ games.length }}</span>
     </h1>
 
-    <!-- Спиннер отображается, пока идет загрузка -->
-    <IsLoadingBalls v-if="isLoading" />
-
-    <!-- Проверяем, есть ли игры -->
-    <div
-      class="all-games-list pb-[50px] pt-[20px] px-2"
-      v-else-if="filteredGames.length"
-    >
+    <!-- Игры текущей категории -->
+    <div class="all-games-list pb-[50px] pt-[20px] px-2" v-if="games && games.length">
       <div
-        v-for="game in filteredGames"
+        v-for="game in games"
         :key="game.id"
         class="game-card bg-nj-card rounded-lg flex flex-col nj-hover-shadow cursor-pointer"
         @click="goToGame(game)"
       >
         <img :src="game.image" :alt="game.title" class="game-image rounded-lg" />
-        <div class="game-card-boy flex-1 flex items-center justify-center">
+        <div class="game-card-body flex-1 flex items-center justify-center">
           <h2 class="title text-sm text-center px-1 py-2">{{ game.title }}</h2>
         </div>
       </div>
     </div>
 
     <!-- Сообщение, если игр нет -->
-    <p v-else class="no-games-message">No games available to display.</p>
+    <p v-if="games.length === 0" class="no-games-message">
+      No games available in this category.
+    </p>
+
+    <!-- Спиннер загрузки -->
+    <!-- <IsLoadingBalls v-if="isLoading" /> -->
   </div>
 </template>
 
