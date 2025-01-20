@@ -100,5 +100,6 @@ const goToGame = (game) => {
 .no-games-message {
   text-align: center;
   color: #999;
+  padding: 40px;
 }
 </style>
