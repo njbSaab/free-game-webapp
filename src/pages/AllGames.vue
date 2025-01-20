@@ -61,7 +61,8 @@ const goToGame = (game) => {
 
     <!-- Заголовок страницы -->
     <h1 class="page-title px-2 text-xl">
-      {{ categoryStore.currentCategory }} Games
+      <span class="capitalize">{{ categoryStore.currentCategory }}</span> 
+      games
       <span class="text-nj-white-50">{{ games.length }}</span>
     </h1>
 

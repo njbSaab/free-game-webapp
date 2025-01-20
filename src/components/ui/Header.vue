@@ -83,7 +83,7 @@ onBeforeUnmount(() => {
 }
 
 .nav-close .nav{
-  transition: .1s ease-in-out;
+  transition: .2s ease-out;
   opacity: 0;
   padding: 0px;
   /* transform: translateY(-1000px); */
@@ -101,11 +101,10 @@ onBeforeUnmount(() => {
   z-index: 1;
   backdrop-filter: blur(2px);
   opacity: 1;
-  transition: .1s ease-in;
+  transition: .3s ease-in;
   z-index: 11111;
 }
 .overlay-non{
-  width: 0;
   opacity: 0;
   z-index: -1;
   transition: .1s ease-in;

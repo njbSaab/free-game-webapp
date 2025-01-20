@@ -77,7 +77,7 @@ onMounted(() => {
       tryFeeCardRef.value = tryFeeCard || null;
       console.log("Categories loaded:", categories.value);
       isLoading.value = false;
-    }, 300);
+    }, 200);
   } catch (error) {
     console.error("Error loading data:", error);
     isLoading.value = false;
