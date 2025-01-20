@@ -1,6 +1,6 @@
 <template>
   <div class="game-carousel my-10" v-auto-animate>
-    <div class="carousel-title px-4 flex justify-between items-center mb-6">
+    <div class="carousel-title px-4 flex justify-between items-center">
       <div class="carousel-title-wrapper flex items-center pr-[10px] space-x-2">
         <img
           :src="data.title.image"
@@ -17,16 +17,19 @@
       </router-link>
     </div>
 
-    <div class="carousel carousel-center w-full">
+    <div class="carousel carousel-center w-full py-[20px]">
       <div
-        class="carousel-item flex-shrink-0 mx-1 rounded-md overflow-hidden"
+        class="carousel-item nj-hover-shadow flex-shrink-0 mx-1 rounded-md overflow-hidden"
         v-for="(item, index) in data.items"
         :key="index"
         @click="goToGame(item)"
       >
-        <div class="game-carousel-item rounded-md relative cursor-pointer">
-          <span class="play">▶</span>
-          <img :src="item.image" alt="Game Image" class="rounded-md cursor-pointer" />
+        <div class="game-carousel-item rounded-md relative cursor-pointer flex flex-col">
+          <div class="image-wrapper rounded-md relative cursor-pointer">
+            <span class="play"> <img src="https://i.imgur.com/NppGnvz.png" alt="" /> </span>
+            <img :src="item.image" alt="Game Image" class="rounded-md cursor-pointer" />
+          </div>
+          <h3 class="title text-xl text-center px-2 flex-1 flex items-center justify-center">{{ item.title }}</h3>
         </div>
       </div>
     </div>
