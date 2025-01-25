@@ -77,9 +77,9 @@ import { reactive } from "vue";
 // Данные изображения
 const carouselImage = reactive({
   webp:
-    "https://cdn.vectorstock.com/i/500p/50/33/play-games-have-fun-neon-sign-with-game-pad-vector-38395033.jpg",
+    "http://194.36.179.168:8081/banners/image1.jpg",
   jpg:
-    "https://cdn.vectorstock.com/i/500p/50/33/play-games-have-fun-neon-sign-with-game-pad-vector-38395033.jpg",
+    "http://194.36.179.168:8081/banners/image1.jpg",
 });
 
 // Данные игры

@@ -13,8 +13,8 @@
       </picture>
     </span>
     <div class="info flex flex-col">
-      <h3 class="text-xl font-bold">{{ cardData?.title || 'No Title' }}</h3>
-      <p class="text-sm text-gray-500">{{ cardData?.description || 'No Description' }}</p>
+      <h3 class="text-xl font-bold pb-[10px]">{{ cardData?.title || 'No Title' }}</h3>
+      <p class="text-sm text-gray-400">{{ cardData?.description || 'No Description' }}</p>
     </div>
     <button
       class="btn btn-nj-primary mb-2 md:mt-0 w-2/3 mx-auto"

@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
-import { carouselNew } from "@/data/new_carousel.js";
-import { carouselPopular } from "@/data/popular_carousel.js";
+import { carouselNew } from "@/data/carousels/new_carousel.js";
+import { carouselPopular } from "@/data/carousels/popular_carousel.js";
 
 export const useGameStore = defineStore("gameStore", {
   state: () => ({

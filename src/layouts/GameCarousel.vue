@@ -1,11 +1,11 @@
 <template>
   <div class="game-carousel my-10" v-auto-animate>
-    <div class="carousel-title px-4 flex justify-between items-center">
+    <div class="carousel-title px-1 flex justify-between items-center">
       <div class="carousel-title-wrapper flex items-center pr-[10px] space-x-2">
         <img
           :src="data.title.image"
           alt="Carousel Title Image"
-          class="h-8 w-8 rounded-full"
+          class="h-8 w-8"
         />
         <h1 class="text-lg carousel-title font-bold">{{ data.title.text }}</h1>
       </div>
