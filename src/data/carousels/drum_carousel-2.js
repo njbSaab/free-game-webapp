@@ -1,6 +1,6 @@
 export const carouselDrumGamesSecond = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/drum.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/drum.svg",
     text: "3-барабанные слоты",
     textShort: "3-барабанные",
   },

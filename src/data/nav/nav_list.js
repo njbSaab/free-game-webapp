@@ -4,23 +4,23 @@ export const navSections = [
     items: [
       {
         text: "Как выбрать онлайн-казино",
-        icon: "http://194.36.179.168:8081/nav/nav-1.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-1.svg",
       },
       {
         text: "Игры, которые зависят от удачи: RTP и дисперсия",
-        icon: "http://194.36.179.168:8081/nav/nav-1.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-1.svg",
       },
       {
         text: "Бонусы и акции",
-        icon: "http://194.36.179.168:8081/nav/nav-1.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-1.svg",
       },
       {
         text: "Кодекс честных азартных игр",
-        icon: "http://194.36.179.168:8081/nav/nav-1.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-1.svg",
       },
       {
         text: "Ответственная игра и помощь зависимым от азартных игр",
-        icon: "http://194.36.179.168:8081/nav/nav-1.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-1.svg",
       },
     ],
   },
@@ -29,23 +29,23 @@ export const navSections = [
     items: [
       {
         text: "Слот",
-        icon: "http://194.36.179.168:8081/nav/nav-2-1.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-2-1.svg",
       },
       {
         text: "Рулетка",
-        icon: "http://194.36.179.168:8081/nav/nav-2-2.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-2-2.svg",
       },
       {
         text: "Блэкджек",
-        icon: "http://194.36.179.168:8081/nav/nav-2-3.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-2-3.svg",
       },
       {
         text: "Видео покер",
-        icon: "http://194.36.179.168:8081/nav/nav-2-4.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-2-4.svg",
       },
       {
         text: "Крэпс",
-        icon: "http://194.36.179.168:8081/nav/nav-2-5.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-2-5.svg",
       },
     ],
   },
@@ -54,19 +54,19 @@ export const navSections = [
     items: [
       {
         text: "O нас",
-        icon: "http://194.36.179.168:8081/nav/nav-3-1.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-3-1.svg",
       },
       {
         text: "Контакт",
-        icon: "http://194.36.179.168:8081/nav/nav-3-2.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-3-2.svg",
       },
       {
         text: "Правила и условия",
-        icon: "http://194.36.179.168:8081/nav/nav-3-3.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-3-3.svg",
       },
       {
         text: "Новости",
-        icon: "http://194.36.179.168:8081/nav/nav-3-4.svg",
+        icon: "https://free-games-img.netlify.app/img/nav/nav-3-4.svg",
       },
     ],
   },

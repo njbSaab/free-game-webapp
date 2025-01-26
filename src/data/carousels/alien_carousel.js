@@ -1,6 +1,6 @@
 export const carouselAlienGames = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/%D0%B0lien.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/%D0%B0lien.svg",
     text: "Инопланетная тематика",
     textShort: "Пришельцы",
   },

@@ -1,6 +1,6 @@
 export const carouselEgyptGames = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/egypt.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/egypt.svg",
     text: "Египетская тематика",
     textShort: "Египетские",
   },

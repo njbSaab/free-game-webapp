@@ -1,6 +1,6 @@
 export const carouselMedievalGames = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/medieval.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/medieval.svg",
     text: "Средневековые игры",
     textShort: "Средневековые",
   },

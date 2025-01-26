@@ -1,6 +1,6 @@
 export const carouselOctober = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/october.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/october.svg",
     text: "Выпущеные в октябре",
     textShort: "Октябрьские",
   },

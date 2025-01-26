@@ -1,6 +1,6 @@
 export const carouselRetro = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/retro.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/retro.svg",
     text: "Классические и ретро игры",
     textShort: "Ретро",
   },

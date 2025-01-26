@@ -1,6 +1,6 @@
 export const carouselBuyBonus = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/bonus.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/bonus.svg",
     text: "Купить бонус",
     textShort: "Бонус",
   },

@@ -1,6 +1,6 @@
 export const carouselAztecGames = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/aztec.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/aztec.svg",
     text: "Ацтецкую тематика",
     textShort: "Ацтецки",
   },

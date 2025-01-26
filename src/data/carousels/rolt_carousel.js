@@ -1,6 +1,6 @@
 export const carouselRolt = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/rolt.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/rolt.svg",
     text: "Рулетка",
     textShort: "Рулетка",
   },

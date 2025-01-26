@@ -1,6 +1,6 @@
 export const carouselAsianGames = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/asian.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/asian.svg",
     text: "Азиатская тематика",
     textShort: "Азиатcкие",
   },

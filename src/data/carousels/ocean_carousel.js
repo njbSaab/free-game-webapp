@@ -1,6 +1,6 @@
 export const carouselOceanGames = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/ocean.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/ocean.svg",
     text: "Океанская тематика",
     textShort: "Океанские",
   },

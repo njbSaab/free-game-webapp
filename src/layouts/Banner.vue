@@ -78,9 +78,9 @@ import { reactive } from "vue";
 // Данные изображения
 const carouselImage = reactive({
   webp:
-    "http://194.36.179.168:8081/banners/image1.jpg",
+    "https://free-games-img.netlify.app/img/banners/image1.jpg",
   jpg:
-    "http://194.36.179.168:8081/banners/image1.jpg",
+    "https://free-games-img.netlify.app/img/banners/image1.jpg",
 });
 
 // Данные игры

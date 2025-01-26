@@ -1,6 +1,6 @@
 export const carouselLive = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/live.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/live.svg",
     text: "Живые игры",
     textShort: "Живые",
   },

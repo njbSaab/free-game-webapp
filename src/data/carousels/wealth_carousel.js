@@ -1,6 +1,6 @@
 export const carouselWealth = {
   title: {
-    image: "http://194.36.179.168:8081/main-carousel/wealth.svg",
+    image: "https://free-games-img.netlify.app/img/main-carousel/wealth.svg",
     text: "Игры о деньгах и богатства",
     textShort: "Богатства",
   },
