@@ -31,7 +31,7 @@ const selectCategory = (categoryName) => {
 <template>
   <div class="category-carousel my-4" v-auto-animate>
     <!-- Проверка на наличие элементов -->
-    <div v-if="items.length" class="carousel px-[10px] carousel-center w-full py-[15px]">
+    <div v-if="items.length" class="carousel px-1 carousel-center w-full py-[15px]">
       <div
         class="carousel-item mx-w-[250px] w-[25%] flex-shrink-0 mx-1 flex flex-col items-center justify-center gap-1 bg-nj-card rounded-md py-2 px-1 nj-hover-shadow nj-hover-scale cursor-pointer"
         v-for="(item, index) in items"

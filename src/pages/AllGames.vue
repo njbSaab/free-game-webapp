@@ -13,6 +13,12 @@ const categories = computed(() => categoryStore.categories);
 
 // Обработка изменения маршрута
 onMounted(() => {
+  // Прокрутить страницу к началу
+   window.scrollTo({
+    top: 350,
+    behavior: "smooth", // Плавная прокрутка (опционально)
+  });
+  
   const categoryFromRoute = router.currentRoute.value.query.category || "All";
   categoryStore.setCurrentCategory(categoryFromRoute);
 });
@@ -75,6 +81,7 @@ const goToGame = (game) => {
         @click="goToGame(game)"
       >
         <img :src="game.image" :alt="game.title" class="game-image rounded-lg" />
+        <!-- <div class="skeleton h-[100%] w-[100%] absolute top-0 left-0 bg-nj-card"></div> -->
         <div class="game-card-body flex-1 flex items-center justify-center">
           <h2 class="title text-sm text-center px-1 py-2">{{ game.title }}</h2>
         </div>
@@ -102,5 +109,11 @@ const goToGame = (game) => {
   text-align: center;
   color: #999;
   padding: 40px;
+}
+.game-image {
+  min-height: 100px;
+}
+.skeleton{
+  z-index: -1;
 }
 </style>

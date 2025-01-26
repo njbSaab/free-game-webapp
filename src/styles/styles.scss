@@ -1,6 +1,7 @@
 body {
   background-color: #1b2642;
   color: #ffffff;
+  behavior: smooth;
 }
 :root {
   --text-color-light: #1b2642;
@@ -254,11 +255,13 @@ a:hover {
   z-index: 99999;
   border-radius: 0 0 12px 12px;
   padding: 5px 10px;
+  max-height: 100%;
+  overflow-y: auto;
+  backdrop-filter: blur(15px);
   /* margin: 8px auto; */
   /* width: 99%; */
   /* margin: auto; */
   /* box-shadow: 0px 0px 25px rgba(0, 149, 255, 0.8); */
-  backdrop-filter: blur(15px);
 }
 .btn.btn-circle {
   background-color: transparent;
@@ -299,7 +302,9 @@ a:hover {
   z-index: 2;
   /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.75); */
 }
-
+.skeleton {
+  border-radius: 0;
+}
 .game-item-promo-label {
   align-items: center;
   clip-path: polygon(0 0, 0 100%, 94% 100%, 100% 0);
@@ -457,8 +462,8 @@ a:hover {
   font-size: 11px;
 }
 .category-carousel .game-icon {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -644,5 +649,6 @@ header {
   }
   .sm {
     font-size: 14px !important;
+    line-height: 1.25;
   }
 }

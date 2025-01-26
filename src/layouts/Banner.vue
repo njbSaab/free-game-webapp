@@ -24,7 +24,7 @@
                   type="image/webp"
                   :srcset="carouselImage.webp"
                 />
-                <img alt="Divine Wine" height="220" :src="carouselImage.jpg" />
+                <img alt="Divine Wine" :src="carouselImage.jpg" />
               </picture>
               <span class="game-item-promo-label label-purple absolute z-index-1">
                 이 주의 게임 #1
@@ -62,6 +62,7 @@
             <div class="cirlcle-wrapp absolute w-[100%] h-[100%] z-0">
               <div class="cicrle-img w-[100px] h-[150px]"></div>
             </div>
+            <div class="skeleton w-full h-[200px] absolute top-0"></div>
           </div>
         </div>
       </div>
@@ -90,7 +91,7 @@ const game = reactive({
 </script>
 
 <style scoped>
-.category-carousel{
-  width: 100%;
+.banner .img-wrapper img{
+  min-height: 200px;
 }
 </style>

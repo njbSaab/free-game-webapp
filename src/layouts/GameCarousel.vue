@@ -1,12 +1,8 @@
 <template>
-  <div class="game-carousel my-10" v-auto-animate>
-    <div class="carousel-title px-1 flex justify-between items-center">
+  <div class="game-carousel my-[20px]" v-auto-animate>
+    <div class="carousel-title px-2 flex justify-between items-center">
       <div class="carousel-title-wrapper flex items-center pr-[10px] space-x-2">
-        <img
-          :src="data.title.image"
-          alt="Carousel Title Image"
-          class="h-8 w-8"
-        />
+        <img :src="data.title.image" alt="Carousel Title Image" class="h-8 w-8" />
         <h1 class="text-lg carousel-title font-bold">{{ data.title.text }}</h1>
       </div>
       <router-link
@@ -26,10 +22,16 @@
       >
         <div class="game-carousel-item rounded-md relative cursor-pointer flex flex-col">
           <div class="image-wrapper rounded-md relative cursor-pointer">
-            <span class="play"> <img src="https://i.imgur.com/NppGnvz.png" alt="" /> </span>
-            <img :src="item.image" alt="Game Image" class="rounded-md cursor-pointer" />
+            <span class="play">
+              <img src="https://i.imgur.com/NppGnvz.png" alt="" />
+            </span>
+            <img :src="item.image" alt="Game Image" class="rounded-md cursor-pointer min-h-[150px]" />
           </div>
-          <h3 class="title text-xl text-center px-2 flex-1 flex items-center justify-center pb-1">{{ item.title }}</h3>
+          <h3
+            class="title text-xl text-center px-2 flex-1 flex items-center justify-center pb-1 my-[10px]"
+          >
+            {{ item.title }}
+          </h3>
         </div>
       </div>
     </div>
@@ -66,13 +68,11 @@ const goToGame = (item) => {
 
 <style scoped>
 /* Добавьте стили для оформления */
-.game-carousel-item{
-  transition: .1s ease-in-out;
+.game-carousel-item {
+  transition: 0.1s ease-in-out;
 }
-.game-carousel-item:hover{
+.game-carousel-item:hover {
   scale: 1.02;
-  transition: .3s ease-in-out;
-
+  transition: 0.3s ease-in-out;
 }
-
 </style>

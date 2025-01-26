@@ -26,6 +26,12 @@ const filterByCategory = (categoryName) => {
 
 // Инициализация текущей игры
 onMounted(() => {
+    // Прокрутить страницу к началу
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Плавная прокрутка (опционально)
+  });
+  
   const game = gameStore.allGames.find((g) => g.id === id.value);
   if (game) {
     gameStore.setCurrentGame(game);

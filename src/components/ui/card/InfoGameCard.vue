@@ -1,6 +1,6 @@
 <template>
   <div
-    class="card-request-game flex flex-col md:flex-row text-center md:text-start gap-4 items-center rounded-md p-4 bg-nj-card my-10 mx-2"
+    class="card-request-game flex flex-col md:flex-row text-center md:text-start gap-4 items-center rounded-md p-4 bg-nj-card my-10 mt-0 mx-2"
   >
     <span class="cursor-pointer" v-if="cardData?.image">
       <picture>

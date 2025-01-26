@@ -44,7 +44,7 @@
     </div>
     <!-- Навигация -->
     <div :class="isMenuOpen ? 'nav-open' : 'nav-close'" v-auto-animate>
-      <MenuNav />    
+      <MenuNav :sections="navSections" />
     </div>
   </header>
   <div :class="isMenuOpen? 'overlay': 'overlay-non'"></div>
@@ -52,6 +52,7 @@
 
 <script setup>
 import MenuNav from './navigation/MenuNav.vue';
+import { navSections } from "@/data/nav/nav_list.js"; 
 import { ref } from "vue";
 const isMenuOpen = ref(false);
 const headerRef = ref(null);
