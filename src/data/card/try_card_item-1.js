@@ -1,7 +1,8 @@
 export const tryCardFirst = {
   image: {
-    webp: "https://free-games-img.netlify.app/img/cart-img/free-card-1.png?webp=true",
-    default: "https://free-games-img.netlify.app/img/cart-img/free-card-1.png",
+    webp: "https://www.turbico.com/en/wp-content/uploads/2024/07/gates-of-olympus.webp",
+    default:
+      "https://i.pinimg.com/originals/14/ab/ef/14abef908b6cbc9e037916d20880e367.gif",
   },
   altText: "게임 요청하기",
   title: "Попробуйте новые турниры по бесплатным игровым автоматам",

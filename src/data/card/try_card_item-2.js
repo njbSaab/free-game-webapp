@@ -1,7 +1,8 @@
 export const tryCardSecond = {
   image: {
-    webp: "https://free-games-img.netlify.app/img/cart-img/free-card-2.png?webp=true",
-    default: "https://free-games-img.netlify.app/img/cart-img/free-card-2.png",
+    webp: "https://png.pngtree.com/png-clipart/20241125/original/pngtree-winning-slot-machine-cherry-casino-spin-png-image_17310084.png?webp=true",
+    default:
+      "https://png.pngtree.com/png-clipart/20241125/original/pngtree-winning-slot-machine-cherry-casino-spin-png-image_17310084.png",
   },
   altText: "게임 요청하기",
   title: "Запросить игру",

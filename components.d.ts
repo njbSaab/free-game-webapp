@@ -17,8 +17,11 @@ declare module 'vue' {
     IsLoading: typeof import('./src/components/ui/IsLoading.vue')['default']
     IsLoadingBalls: typeof import('./src/components/ui/IsLoadingBalls.vue')['default']
     MenuNav: typeof import('./src/components/ui/navigation/MenuNav.vue')['default']
+    PopupRedirect: typeof import('./src/components/ui/popup-redirect/PopupRedirect.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    StatisticCard: typeof import('./src/components/ui/card/StatisticCard.vue')['default']
+    StatsCard: typeof import('./src/components/ui/card/StatsCard.vue')['default']
     SubscribeForm: typeof import('./src/components/ui/SubscribeForm.vue')['default']
     TutorialCard: typeof import('./src/components/ui/card/TutorialCard.vue')['default']
   }

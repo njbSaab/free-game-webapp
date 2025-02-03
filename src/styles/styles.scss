@@ -204,6 +204,30 @@ a:hover {
   width: 140px;
   z-index: -1;
 }
+.side-line {
+  position: relative;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #11182a, #1d273e);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.side-line:before {
+  background-image: linear-gradient(90deg, rgba(0, 149, 255, 0.8), #5d00ff);
+  /* background: linear-gradient(90deg, rgba(0, 149, 255, 0.424), transparent); */
+  box-shadow: 0 5px 20px rgba(0, 149, 255, 0.8);
+  background-size: 200% auto;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .line {
   position: relative;
   padding: 40px 15px 15px;
@@ -384,8 +408,8 @@ a:hover {
 .play {
   position: absolute;
   z-index: 2;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   background-repeat: no-repeat;
   background-size: contain;
   left: 50%;
@@ -407,23 +431,22 @@ a:hover {
   position: relative;
 }
 .image-wrapper:after {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   content: "";
   position: absolute;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 183, 255, 0.7),
-    rgba(0, 149, 255, 0.424),
-    rgba(141, 83, 233, 0.7)
-  );
-  left: 50%;
+  left: 47%;
   top: 50%;
   transform: translate(-50%, -50%);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
+  // background: linear-gradient(45deg, #1b2642, #f663f8ac);
+  background: linear-gradient(45deg, #1b2642, #8827e2aa);
 }
-
+.line[data-v-2ee1f18c] {
+  padding: 35px 0 0;
+  margin-bottom: -1px !important;
+}
 /* .games-box-game {
     position: relative;
     &:after {
@@ -540,7 +563,8 @@ a:hover {
 }
 
 header.nj-dark,
-footer.nj-dark {
+footer.nj-dark,
+.popup {
   box-shadow: 0px 0px 0px rgba(0, 149, 255, 0);
   animation: shadowPulse 8s infinite ease-out;
 }

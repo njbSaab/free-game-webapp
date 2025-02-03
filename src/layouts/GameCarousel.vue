@@ -23,9 +23,13 @@
         <div class="game-carousel-item rounded-md relative cursor-pointer flex flex-col">
           <div class="image-wrapper rounded-md relative cursor-pointer">
             <span class="play">
-              <img src="https://i.imgur.com/NppGnvz.png" alt="" />
+             <img src="../assets/play.png" alt=""> 
             </span>
-            <img :src="item.image" alt="Game Image" class="rounded-md cursor-pointer min-h-[150px]" />
+            <img
+              :src="item.image"
+              alt="Game Image"
+              class="rounded-md cursor-pointer min-h-[150px]"
+            />
           </div>
           <h3
             class="title text-xl text-center px-2 flex-1 flex items-center justify-center pb-1 my-[10px]"

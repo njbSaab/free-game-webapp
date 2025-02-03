@@ -66,10 +66,9 @@ const goToGame = (game) => {
     />
 
     <!-- Заголовок страницы -->
-    <h1 class="page-title px-2 text-xl">
+    <h1 class="page-title px-2 text-xl flex items-center">
       <span class="capitalize">{{ categoryStore.currentCategory }}</span> 
-      games
-      <span class="text-nj-white-50">{{ games.length }}</span>
+      <span class="title px-2 text-lg">({{ games.length }})</span>
     </h1>
 
     <!-- Игры текущей категории -->

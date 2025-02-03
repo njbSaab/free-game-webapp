@@ -8,6 +8,11 @@
             src="https://static.vecteezy.com/system/resources/thumbnails/019/982/223/small/dark-style-poker-card-element-png.png"
             alt="Logo"
           />
+          <!-- <img
+            class="logo w-[70px] h-[50px]"
+            src="@/assets/logo-kr.png"
+            alt="Logo"
+          /> -->
         </router-link>
       </div>
       <!-- Переключатель меню -->

@@ -7,6 +7,11 @@ import CategoryCarousel from "@/layouts/CategoryCarousel.vue";
 import DetailsCard from "@/components/ui/card/DetailsCard.vue";
 import TutorialCard from "@/components/ui/card/TutorialCard.vue";
 import IsLoadingBalls from "@/components/ui/IsLoadingBalls.vue";
+import StatsCard from "@/components/ui/card/StatsCard.vue";
+import { popupRedirectContents } from "@/data/popup/popup-redirect-data";
+import PopupRedirect from "@/components/ui/popup-redirect/PopupRedirect.vue";
+
+const popupRedirectContentsRef = ref(null);
 
 const router = useRouter();
 const gameStore = useGameStore();
@@ -39,6 +44,10 @@ onMounted(() => {
     console.error("Game not found for ID:", id.value);
   }
   isLoading.value = false;
+
+  popupRedirectContentsRef.value = popupRedirectContents || null;
+  console.log("statsList:", currentGame.value?.statsList);
+
 });
 </script>
 
@@ -50,37 +59,41 @@ onMounted(() => {
   <section v-else class="game-page pt-[85px] min-h-screen" v-auto-animate>
     <div class="info rounded-md nj-bg-card mx-2 my-10 line text-center">
       <h2 class="text-xl font-bold mt-[-10px] pb-[20px] px-4">
-        Играйте в <span class="title">{{ currentGame.title }}</span> бесплатно в демо-режиме
+        무료로 <span class="title">{{ currentGame.title }}</span> 을(를) 플레이하십시오
       </h2>
       <iframe
         :src="currentGame.iframeSrc"
         allow="autoplay *; fullscreen *"
         class="w-full h-screen border-none"
       ></iframe>
+      <use xlink:href="#base_ui_ico_reply_left"></use>
     </div>
-
     <!-- Карточка деталей игры -->
     <DetailsCard
-      :details="currentGame.cardDetails"
+      :details="currentGame.gameDetails"
       :title="currentGame.title"
       :description="currentGame.description"
       :image="currentGame.image"
     />
+    
+    <StatsCard :statsList="currentGame.statsList"/>
 
     <!-- Обучающая карточка -->
-    <TutorialCard
-      :image="currentGame.InfoGameCardSingle.image"
-      :altText="currentGame.InfoGameCardSingle.altText"
-      :title="currentGame.InfoGameCardSingle.title"
-      :description="currentGame.InfoGameCardSingle.description"
-      :tutorial="currentGame.InfoGameCardSingle.tutorila"
-    />
+    <!-- <TutorialCard
+      :altText="currentGame.InfoProviderCardSingle.altText"
+      :title="currentGame.InfoProviderCardSingle.title"
+      :description="currentGame.InfoProviderCardSingle.description"
+      :tutorial="currentGame.InfoProviderCardSingle.tutorila"
+    /> -->
 
     <!-- Карусель категорий -->
     <CategoryCarousel
       :data="{ items: categories }"
       @categorySelected="filterByCategory"
     />
+
+    <PopupRedirect v-if="popupRedirectContentsRef" :popupData="popupRedirectContentsRef" />
+
   </section>
 </template>
 
