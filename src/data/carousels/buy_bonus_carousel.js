@@ -19,16 +19,16 @@ export const carouselBuyBonus = {
         "데모 모드에서 무료로 Neon Craze 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
 
       gameDetails: {
-        developers: "1xbet",
+        developers: "MANCALA GAMING",
         jacpot: false,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$20",
+        maxBind: "$1,800",
+        date: "12월 2024",
       },
       statsList: [
         {
@@ -76,16 +76,16 @@ export const carouselBuyBonus = {
       description:
         "데모 모드에서 무료로 San Chong Baozha 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
-        jacpot: false,
+        developers: "NETGAME",
+        jacpot: true,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$400",
+        date: "12월 2024",
       },
       statsList: [
         {
@@ -133,16 +133,16 @@ export const carouselBuyBonus = {
       description:
         "데모 모드에서 무료로 Snow Wolf Saga 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
-        jacpot: false,
+        developers: "ZILLION GAMES",
+        jacpot: true,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$100",
+        date: "12월 2024",
       },
       statsList: [
         {
@@ -247,16 +247,16 @@ export const carouselBuyBonus = {
       description:
         "데모 모드에서 무료로 Black Bullion Cash Pool 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "NETGAME",
         jacpot: false,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$400",
+        date: "12월 2024",
       },
       statsList: [
         {
@@ -304,16 +304,16 @@ export const carouselBuyBonus = {
       description:
         "데모 모드에서 무료로 Eve of Gifts 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
-        jacpot: false,
+        developers: "PLATIPUS",
+        jacpot: true,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$2",
+        maxBind: "$400",
+        date: "12월 2024",
       },
       statsList: [
         {
@@ -360,16 +360,16 @@ export const carouselBuyBonus = {
       description:
         "데모 모드에서 무료로 Super Ace 2 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "ROYAL SLOT GAMING (RSG)",
         jacpot: false,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$1,000",
+        date: "12월 2024"
       },
       statsList: [
         {

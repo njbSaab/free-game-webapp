@@ -20,16 +20,16 @@ export const carouselRetro = {
         "데모 모드에서 무료로 Double Diamond 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
 
       gameDetails: {
-        developers: "RED TIGER GAMING",
+        developers: "IGT",
         jacpot: false,
-        freeSpeen: true,
-        autorun: true,
-        quickSpin: true,
+        freeSpeen: false,
+        autorun: false,
+        quickSpin: false,
         gamblingFeature: false,
         bonusParches: false,
-        minBind: "$0.2",
-        maxBind: "$10",
-        date: "4월 2018",
+        minBind: "$100",
+        maxBind: "$10,000",
+        date: "1월 2005",
       },
       statsList: [
         {
@@ -83,16 +83,16 @@ export const carouselRetro = {
       description:
         "데모 모드에서 무료로 Diamond Strike 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
-        jacpot: false,
+        developers: "PRAGMATIC PLAY",
+        jacpot: true,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
         bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        minBind: "$0.15",
+        maxBind: "$75",
+        date: "9월 2017",
       },
       statsList: [
         {
@@ -140,16 +140,16 @@ export const carouselRetro = {
       description:
         "데모 모드에서 무료로 Lucky Hot 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
-        jacpot: false,
-        freeSpeen: true,
+        developers: "AMUSNET (EGT)",
+        jacpot: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
-        gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        quickSpin: false,
+        gamblingFeature: true,
+        bonusParches: false,
+        minBind: "$5",
+        maxBind: "$100",
+        date: "2월 2016",
       },
       statsList: [
         {
@@ -196,16 +196,16 @@ export const carouselRetro = {
       description:
         "데모 모드에서 무료로 Mega Joker 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "UNKNOWN",
         jacpot: false,
-        freeSpeen: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
-        gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        quickSpin: false,
+        gamblingFeature: true,
+        bonusParches: false,
+        minBind: "$0.03",
+        maxBind: "$80",
+        date: "1월 2013",
       },
       statsList: [
         {
@@ -253,16 +253,16 @@ export const carouselRetro = {
       description:
         "데모 모드에서 무료로 Hot 27 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "AMATIC",
         jacpot: false,
-        freeSpeen: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
-        gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        quickSpin: false,
+        gamblingFeature: true,
+        bonusParches: false,
+        minBind: "$10",
+        maxBind: "$100",
+        date: "11월 2016",
       },
       statsList: [
         {
@@ -309,16 +309,16 @@ export const carouselRetro = {
       description:
         "데모 모드에서 무료로 Laser Fruit 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "RED TIGER GAMING",
         jacpot: false,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$10",
+        date: "4월 2018",
       },
       statsList: [
         {

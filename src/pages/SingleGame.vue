@@ -5,11 +5,11 @@ import { useGameStore } from "@/stores/gameStore";
 import { useCategoryStore } from "@/stores/categoryStore";
 import CategoryCarousel from "@/layouts/CategoryCarousel.vue";
 import DetailsCard from "@/components/ui/card/DetailsCard.vue";
-import TutorialCard from "@/components/ui/card/TutorialCard.vue";
 import IsLoadingBalls from "@/components/ui/IsLoadingBalls.vue";
 import StatsCard from "@/components/ui/card/StatsCard.vue";
 import { popupRedirectContents } from "@/data/popup/popup-redirect-data";
 import PopupRedirect from "@/components/ui/popup-redirect/PopupRedirect.vue";
+import AboutGame from "@/components/ui/card/AboutGame.vue";
 
 const popupRedirectContentsRef = ref(null);
 
@@ -79,12 +79,7 @@ onMounted(() => {
     <StatsCard :statsList="currentGame.statsList"/>
 
     <!-- Обучающая карточка -->
-    <!-- <TutorialCard
-      :altText="currentGame.InfoProviderCardSingle.altText"
-      :title="currentGame.InfoProviderCardSingle.title"
-      :description="currentGame.InfoProviderCardSingle.description"
-      :tutorial="currentGame.InfoProviderCardSingle.tutorila"
-    /> -->
+    <AboutGame/>
 
     <!-- Карусель категорий -->
     <CategoryCarousel

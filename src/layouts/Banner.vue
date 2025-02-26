@@ -1,8 +1,10 @@
 <template>
   <div
-    class="banner page-header container lg:mx-auto game-section-carousel-header flex flex-col lg:flex-row items-center lg:text-start text-center gap-4 lg:gap-0 pt-[125px]"
+    class="banner page-header container game-section-carousel-header flex flex-col lg:flex-row items-center lg:text-start text-center gap-4 pt-[100px]"
   >
-    <div class="page-header-heading w-[90%] mx-auto lg:w-1/2">
+  <!-- lg:gap-0 lg:mx-auto -->
+    <div class="page-header-heading w-[90%] mx-auto">
+      <!-- lg:w-1/2 -->
       <h1 class="fs-25 c-white text-default">무료 온라인 슬롯 및 카지노 게임</h1>
       <!-- Описание -->
       <div class="desc fs-16 mt-4">
@@ -12,8 +14,9 @@
     </div>
 
     <div
-      class="page-heading-carousel page-heading-carousel-static w-full sm:w-2/3 lg:w-full"
+      class="page-heading-carousel-static w-[90%] lg:w-full"
     >
+    <!-- page-heading-carousel -->
       <div class="game-list-top-carousel-wrapper mx-2 sm:mx-0 lg:mx-0">
         <div class="js-cg-carousel-item cg-carousel-item cg-carousel-layer-0 selected">
           <div class="game-carousel-item relative">

@@ -1,7 +1,16 @@
+html {
+  background: #1b2642a2;
+}
 body {
   background-color: #1b2642;
   color: #ffffff;
   behavior: smooth;
+  max-width: 430px;
+  margin: 0 auto;
+}
+.header {
+  max-width: 430px;
+  margin: auto;
 }
 :root {
   --text-color-light: #1b2642;

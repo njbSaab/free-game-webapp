@@ -20,16 +20,16 @@ export const carouselFrutisGames = {
         "데모 모드에서 무료로 27 Wins 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
 
       gameDetails: {
-        developers: "1xbet",
+        developers: "AMUSNET (EGT)",
         jacpot: false,
-        freeSpeen: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
-        gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        quickSpin: false,
+        gamblingFeature: true,
+        bonusParches: false,
+        minBind: "$10",
+        maxBind: "$200",
+        date: "2월 2019",
       },
       statsList: [
         {
@@ -77,16 +77,16 @@ export const carouselFrutisGames = {
       description:
         "데모 모드에서 무료로 Hot Fruits 20 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "AMATIC",
         jacpot: false,
-        freeSpeen: true,
-        autorun: true,
-        quickSpin: true,
+        freeSpeen: false,
+        autorun: false,
+        quickSpin: false,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "Не найден",
+        maxBind: "Не найден",
+        date: "Не найден",
       },
       statsList: [
         {
@@ -133,16 +133,16 @@ export const carouselFrutisGames = {
       description:
         "데모 모드에서 무료로 40 슈퍼 핫 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
       gameDetails: {
-        developers: "1xbet",
-        jacpot: false,
-        freeSpeen: true,
+        developers: "AMUSNET (EGT)",
+        jacpot: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
-        gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        quickSpin: false,
+        gamblingFeature: true,
+        bonusParches: false,
+        minBind: "$40",
+        maxBind: "$2,400",
+        date: "1월 2015",
       },
       statsList: [
         {
@@ -190,16 +190,16 @@ export const carouselFrutisGames = {
       description:
         "데모 모드에서 무료로 Sizzling Hot Deluxe 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "NOVOMATIC",
         jacpot: false,
-        freeSpeen: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
-        gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        quickSpin: false,
+        gamblingFeature: true,
+        bonusParches: false,
+        minBind: "$10",
+        maxBind: "$1,000",
+        date: "1월 2007",
       },
       statsList: [
         {
@@ -246,16 +246,16 @@ export const carouselFrutisGames = {
       description:
         "데모 모드에서 무료로 Burning Hot 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
       gameDetails: {
-        developers: "1xbet",
-        jacpot: false,
-        freeSpeen: true,
+        developers: "AMUSNET (EGT)",
+        jacpot: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
-        gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        quickSpin: false,
+        gamblingFeature: true,
+        bonusParches: false,
+        minBind: "$5",
+        maxBind: "$300",
+        date: "1월 2015",
       },
       statsList: [
         {
@@ -302,16 +302,16 @@ export const carouselFrutisGames = {
       description:
         "데모 모드에서 무료로 20 Super Hot 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
       gameDetails: {
-        developers: "1xbet",
-        jacpot: false,
-        freeSpeen: true,
+        developers: "AMUSNET (EGT)",
+        jacpot: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
-        gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        quickSpin: false,
+        gamblingFeature: true,
+        bonusParches: false,
+        minBind: "$20",
+        maxBind: "$1,200",
+        date: "1월 2015",
       },
       statsList: [
         {
@@ -359,16 +359,16 @@ export const carouselFrutisGames = {
       description:
         "데모 모드에서 무료로 Fruit Party 2 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "PRAGMATIC PLAY",
         jacpot: false,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$100",
+        date: "8월 2021",
       },
       statsList: [
         {

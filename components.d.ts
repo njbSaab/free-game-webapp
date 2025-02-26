@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AboutGame: typeof import('./src/components/ui/card/AboutGame.vue')['default']
     DetailsCard: typeof import('./src/components/ui/card/DetailsCard.vue')['default']
     Footer: typeof import('./src/components/ui/Footer.vue')['default']
     GameCardFoter: typeof import('./src/components/ui/card/GameCardFoter.vue')['default']
@@ -20,7 +21,6 @@ declare module 'vue' {
     PopupRedirect: typeof import('./src/components/ui/popup-redirect/PopupRedirect.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    StatisticCard: typeof import('./src/components/ui/card/StatisticCard.vue')['default']
     StatsCard: typeof import('./src/components/ui/card/StatsCard.vue')['default']
     SubscribeForm: typeof import('./src/components/ui/SubscribeForm.vue')['default']
     TutorialCard: typeof import('./src/components/ui/card/TutorialCard.vue')['default']

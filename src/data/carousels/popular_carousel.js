@@ -19,16 +19,16 @@ export const carouselPopular = {
       description:
         "데모 모드에서 무료로 Gates of Olympus Xmas 1000 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "PRAGMATIC PLAY",
         jacpot: false,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
         bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        minBind: "$0.2",
+        maxBind: "$100",
+        date: "2월 2021",
       },
       InfoProviderCardSingle: {
         image: {
@@ -65,6 +65,12 @@ export const carouselPopular = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provider: "PRAGMATIC PLAY",
+        logo: "https://static.casino.guru/pict/124086/PragmaticPlay_white.svg?timestamp=1658212054000&imageDataId=346524",
+        gameDescription:
+          "Gates of Olympus(은)는 Pragmatic Play에서 제작된 슬롯 머신입니다. 해당 슬롯을 찾는 사람이 많은 것으로 미뤄봤을 때, Gates of Olympus은(는) 인터넷에서 가장 인기 있는 슬롯 머신 중 하나입니다. 플레이어들이 왜 이렇게 이 슬롯 머신을 좋아하는지 무료로 확인해보세요.\n\n데모 모드에서 무료로 플레이하려면 게임을 로드한 다음 '스핀' 버튼을 누르세요. 온라인 슬롯 가이드에서는 슬롯 머신과 그 작동 원리에 대해 더 알아보실 수 있습니다.",
+      },
     },
     {
       id: 9,
@@ -76,16 +82,16 @@ export const carouselPopular = {
       description:
         "데모 모드에서 무료로 Hot Fruits 20 슬롯을 무료로 사용해보십시오. 다운로드 또는 등록이 필요 없습니다.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "AMATIC",
         jacpot: false,
-        freeSpeen: true,
-        autorun: true,
-        quickSpin: true,
+        freeSpeen: false,
+        autorun: false,
+        quickSpin: false,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$100",
+        date: "6월 2019",
       },
       InfoProviderCardSingle: {
         image: {
@@ -122,6 +128,12 @@ export const carouselPopular = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provider: "AMATIC",
+        logo: "https://static.casino.guru/pict/123900/Amatic_white.svg?timestamp=1663483910000&imageDataId=374654",
+        gameDescription:
+          "Hot Fruits 20(은)는 Amatic에서 제작된 슬롯 머신입니다. 해당 슬롯을 찾는 사람이 많은 것으로 미뤄봤을 때, Hot Fruits 20은(는) 인터넷에서 가장 인기 있는 슬롯 머신 중 하나입니다. 플레이어들이 왜 이렇게 이 슬롯 머신을 좋아하는지 무료로 확인해보세요.\n\n데모 모드에서 무료로 플레이하려면 게임을 로드한 다음 '스핀' 버튼을 누르세요. 온라인 슬롯 가이드에서는 슬롯 머신과 그 작동 원리에 대해 더 알아보실 수 있습니다.",
+      },
     },
     {
       id: 10,
@@ -133,16 +145,16 @@ export const carouselPopular = {
       description:
         "데모 모드에서 무료로 Sweet Bonanza 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "PRAGMATIC PLAY",
         jacpot: false,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$100",
+        date: "6월 2019",
       },
       InfoProviderCardSingle: {
         image: {
@@ -179,6 +191,12 @@ export const carouselPopular = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provider: "PRAGMATIC PLAY",
+        logo: "https://static.casino.guru/pict/124086/PragmaticPlay_white.svg?timestamp=1658212054000&imageDataId=346524",
+        gameDescription:
+          "Sweet Bonanza(은)는 Pragmatic Play에서 제작된 슬롯 머신입니다. 해당 슬롯을 찾는 사람이 많은 것으로 미뤄봤을 때, Sweet Bonanza은(는) 인터넷에서 가장 인기 있는 슬롯 머신 중 하나입니다. 플레이어들이 왜 이렇게 이 슬롯 머신을 좋아하는지 무료로 확인해보세요.\n\n데모 모드에서 무료로 플레이하려면 게임을 로드한 다음 '스핀' 버튼을 누르세요. 온라인 슬롯 가이드에서는 슬롯 머신과 그 작동 원리에 대해 더 알아보실 수 있습니다.",
+      },
     },
     {
       id: 11,
@@ -191,16 +209,16 @@ export const carouselPopular = {
         "데모 모드에서 무료로 Sugar Rush 1000 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
 
       gameDetails: {
-        developers: "1xbet",
+        developers: "PRAGMATIC PLAY",
         jacpot: false,
-        freeSpeen: true,
-        autorun: true,
-        quickSpin: true,
+        freeSpeen: false,
+        autorun: false,
+        quickSpin: false,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$240",
+        date: "3월 2024",
       },
       InfoProviderCardSingle: {
         image: {
@@ -237,6 +255,12 @@ export const carouselPopular = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provider: "PRAGMATIC PLAY",
+        logo: "https://static.casino.guru/pict/124086/PragmaticPlay_white.svg?timestamp=1658212054000&imageDataId=346524",
+        gameDescription:
+          "Sugar Rush 1000(은)는 Pragmatic Play에서 제작된 슬롯 머신입니다. 해당 슬롯을 찾는 사람이 많은 것으로 미뤄봤을 때, Sugar Rush 1000은(는) 인터넷에서 가장 인기 있는 슬롯 머신 중 하나입니다. 플레이어들이 왜 이렇게 이 슬롯 머신을 좋아하는지 무료로 확인해보세요.\n\n데모 모드에서 무료로 플레이하려면 게임을 로드한 다음 '스핀' 버튼을 누르세요. 온라인 슬롯 가이드에서는 슬롯 머신과 그 작동 원리에 대해 더 알아보실 수 있습니다.",
+      },
     },
     {
       id: 12,
@@ -248,16 +272,16 @@ export const carouselPopular = {
       description:
         "데모 모드에서 무료로 Joker's Jewels 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "PRAGMATIC PLAY",
         jacpot: false,
-        freeSpeen: true,
+        freeSpeen: false,
         autorun: true,
-        quickSpin: true,
+        quickSpin: false,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.05",
+        maxBind: "$25",
+        date: "3월 2018",
       },
       InfoProviderCardSingle: {
         image: {
@@ -294,6 +318,12 @@ export const carouselPopular = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provider: "PRAGMATIC PLAY",
+        logo: "https://static.casino.guru/pict/124086/PragmaticPlay_white.svg?timestamp=1658212054000&imageDataId=346524",
+        gameDescription:
+          "Joker's Jewels(은)는 Pragmatic Play에서 제작된 슬롯 머신입니다. 해당 슬롯을 찾는 사람이 많은 것으로 미뤄봤을 때, Joker's Jewels은(는) 인터넷에서 가장 인기 있는 슬롯 머신 중 하나입니다. 플레이어들이 왜 이렇게 이 슬롯 머신을 좋아하는지 무료로 확인해보세요.\n\n데모 모드에서 무료로 플레이하려면 게임을 로드한 다음 '스핀' 버튼을 누르세요. 온라인 슬롯 가이드에서는 슬롯 머신과 그 작동 원리에 대해 더 알아보실 수 있습니다.",
+      },
     },
     {
       id: 6,
@@ -304,16 +334,16 @@ export const carouselPopular = {
       description:
         "다운로드하거나 등록할 필요없이 데모 모드에서 무료로 Aviator을(를) 온라인으로 이용해보세요.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "SPRIBE",
         jacpot: false,
-        freeSpeen: true,
-        autorun: true,
-        quickSpin: true,
+        freeSpeen: false,
+        autorun: false,
+        quickSpin: false,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.1",
+        maxBind: "$100",
+        date: "5월 2021",
       },
       InfoProviderCardSingle: {
         image: {
@@ -350,6 +380,12 @@ export const carouselPopular = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provider: "SPRIBE",
+        logo: "https://static.casino.guru/pict/109653/Spribe.svg?timestamp=1653435783000&imageDataId=194319",
+        gameDescription:
+          "Aviator은(는) 인터넷에서 가장 인기 있는 슬롯 머신 중 하나입니다. 플레이어들이 왜 이렇게 이 슬롯 머신을 좋아하는지 무료로 확인해보세요.\n\n데모 모드에서 무료로 플레이하려면 게임을 로드한 다음 '스핀' 버튼을 누르세요. 온라인 슬롯 가이드에서는 슬롯 머신과 그 작동 원리에 대해 더 알아보실 수 있습니다.",
+      },
     },
     {
       id: 7,
@@ -361,16 +397,16 @@ export const carouselPopular = {
       description:
         "데모 모드에서 무료로 파이어 인 더 홀 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "NOLIMIT CITY",
         jacpot: false,
         freeSpeen: true,
         autorun: true,
         quickSpin: true,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$50",
+        date: "3월 2021",
       },
       InfoProviderCardSingle: {
         image: {
@@ -407,6 +443,12 @@ export const carouselPopular = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provider: "NOLIMIT CITY",
+        logo: "https://static.casino.guru/pict/124056/NoLimit_dark-1.svg?timestamp=1733241096000&imageDataId=1087148",
+        gameDescription:
+          "Fire in the Hole(은)는 Nolimit City에서 제작된 슬롯 머신입니다. 해당 슬롯을 찾는 사람이 많은 것으로 미뤄봤을 때, Fire in the Hole은(는) 인터넷에서 가장 인기 있는 슬롯 머신 중 하나입니다. 플레이어들이 왜 이렇게 이 슬롯 머신을 좋아하는지 무료로 확인해보세요.\n\n데모 모드에서 무료로 플레이하려면 게임을 로드한 다음 '스핀' 버튼을 누르세요. 온라인 슬롯 가이드에서는 슬롯 머신과 그 작동 원리에 대해 더 알아보실 수 있습니다.",
+      },
     },
     {
       id: 13,
@@ -418,16 +460,16 @@ export const carouselPopular = {
       description:
         "데모 모드에서 무료로 젬스 보난자 슬롯을 사용해보십시오. 다운로드 및 등록이 필요 없으며 실제 돈으로 게임을 하기 전에는 게임의 리뷰를 읽어주세요.",
       gameDetails: {
-        developers: "1xbet",
+        developers: "PRAGMATIC PLAY",
         jacpot: false,
-        freeSpeen: true,
-        autorun: true,
-        quickSpin: true,
+        freeSpeen: false,
+        autorun: false,
+        quickSpin: false,
         gamblingFeature: false,
-        bonusParches: true,
-        minBind: 0.2,
-        maxBind: 300,
-        date: "январь 2024г",
+        bonusParches: false,
+        minBind: "$0.2",
+        maxBind: "$50",
+        date: "3월 2020",
       },
       InfoProviderCardSingle: {
         image: {
@@ -464,6 +506,12 @@ export const carouselPopular = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provider: "PRAGMATIC PLAY",
+        logo: "https://static.casino.guru/pict/124086/PragmaticPlay_white.svg?timestamp=1658212054000&imageDataId=346524",
+        gameDescription:
+          "Gems Bonanza(은)는 Pragmatic Play에서 제작된 슬롯 머신입니다. 해당 슬롯을 찾는 사람이 많은 것으로 미뤄봤을 때, Gems Bonanza은(는) 인터넷에서 가장 인기 있는 슬롯 머신 중 하나입니다. 플레이어들이 왜 이렇게 이 슬롯 머신을 좋아하는지 무료로 확인해보세요.\n\n데모 모드에서 무료로 플레이하려면 게임을 로드한 다음 '스핀' 버튼을 누르세요. 온라인 슬롯 가이드에서는 슬롯 머신과 그 작동 원리에 대해 더 알아보실 수 있습니다.",
+      },
     },
   ],
 };
