@@ -79,7 +79,10 @@ onMounted(() => {
     <StatsCard :statsList="currentGame.statsList"/>
 
     <!-- Обучающая карточка -->
-    <AboutGame/>
+    <AboutGame 
+    :logo="currentGame.aboutGame.logo"
+    :description="currentGame.aboutGame.gameDescription"
+    :provider="currentGame.aboutGame.provide"/>
 
     <!-- Карусель категорий -->
     <CategoryCarousel

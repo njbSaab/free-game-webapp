@@ -15,7 +15,7 @@
       <GameCarousel
         v-if="carouselNewRef && carouselNewRef.items && carouselNewRef.items.length"
         :data="carouselNewRef"
-      /> 
+      />
       <GameCarousel
         v-if="
           carouselPopularRef &&
@@ -43,10 +43,67 @@
         :data="carouselFrutisGamesRef"
       />
       <GameCard v-if="tryFeeCardRef" :cardData="tryFeeCardRef" />
+
       <GameCarousel
         v-if="carouselRetroRef && carouselRetroRef.items && carouselRetroRef.items.length"
         :data="carouselRetroRef"
       />
+      <!-- asian games -->
+      <GameCarousel
+        v-if="
+        carouselAsianGamesRef && carouselAsianGamesRef.items && carouselAsianGamesRef.items.length
+        "
+        :data="carouselAsianGamesRef"
+      />
+      <GameCard v-if="tryCardFirstRef" :cardData="tryCardFirstRef" />
+      <!-- asian games -->
+
+      <GameCarousel
+        v-if="
+        carouselDrumGamesFirstRef && carouselDrumGamesFirstRef.items && carouselDrumGamesFirstRef.items.length
+        "
+        :data="carouselDrumGamesFirstRef"
+      />
+      <GameCarousel
+        v-if="
+        carouselEgyptGamesRef && carouselEgyptGamesRef.items && carouselEgyptGamesRef.items.length
+        "
+        :data="carouselEgyptGamesRef"
+      />
+      <GameCarousel
+        v-if="
+        carouselOceanGamesRef && carouselOceanGamesRef.items && carouselOceanGamesRef.items.length
+        "
+        :data="carouselOceanGamesRef"
+      />
+      <GameCarousel
+        v-if="
+        carouselDrumGamesSecondRef && carouselDrumGamesSecondRef.items && carouselDrumGamesSecondRef.items.length
+        "
+        :data="carouselDrumGamesSecondRef"
+      />
+      <GameCarousel
+        v-if="
+        carouselMedievalGamesRef && carouselMedievalGamesRef.items && carouselMedievalGamesRef.items.length
+        "
+        :data="carouselMedievalGamesRef"
+      />
+
+      <GameCard v-if="tryCardSecondRef" :cardData="tryCardSecondRef" />
+
+      <GameCarousel
+        v-if="
+        carouselAlienGamesRef && carouselAlienGamesRef.items && carouselAlienGamesRef.items.length
+        "
+        :data="carouselAlienGamesRef"
+      />
+      <GameCarousel
+        v-if="
+        carouselDiamondGamesRef && carouselDiamondGamesRef.items && carouselDiamondGamesRef.items.length
+        "
+        :data="carouselDiamondGamesRef"
+      />
+      <GameCard v-if="tryCardSecondRef" :cardData="tryCardSecondRef" />
       <Info />
     </div>
   </div>
@@ -74,7 +131,14 @@ import { carouselBuyBonus } from "../data/carousels/buy_bonus_carousel.js";
 import { carouselPopular } from "../data/carousels/popular_carousel.js";
 import { carouselFrutisGames } from "../data/carousels/frutis_carousel.js";
 import { carouselRetro } from "../data/carousels/retro_carousel.js";
-
+import { carouselAsianGames } from "../data/carousels/asian_carousel.js";
+import { carouselDrumGamesFirst } from "../data/carousels/drum_carousel-1.js";
+import { carouselEgyptGames } from "../data/carousels/egypt_carousel.js"; 
+import { carouselOceanGames } from "../data/carousels/ocean_carousel.js"; 
+import { carouselDrumGamesSecond } from "../data/carousels/drum_carousel-2.js";
+import { carouselMedievalGames } from "../data/carousels/medieval_carousel.js"; 
+import { carouselAlienGames } from "../data/carousels/alien_carousel.js";
+import { carouselDiamondGames } from "../data/carousels/diamond_carousel.js"; 
 
 const router = useRouter();
 const categoryStore = useCategoryStore();
@@ -91,6 +155,14 @@ const carouselPopularRef = ref(null);
 const carouselBuyBonusRef = ref(null);
 const carouselFrutisGamesRef = ref(null);
 const carouselRetroRef = ref(null);
+const carouselAsianGamesRef = ref(null);
+const carouselDrumGamesFirstRef = ref(null);
+const carouselEgyptGamesRef = ref(null);
+const carouselOceanGamesRef = ref(null);
+const carouselDrumGamesSecondRef = ref(null);
+const carouselMedievalGamesRef = ref(null);
+const carouselAlienGamesRef = ref(null);
+const carouselDiamondGamesRef = ref(null);
 
 // Доступ к данным категорий из хранилища
 const categories = computed(() => categoryStore.categories);
@@ -106,7 +178,22 @@ const filterByCategory = (categoryName) => {
 onMounted(() => {
   try {
     console.log("Loading games into category store...");
-    const games = [...carouselNew.items,...carouselPopular.items, ...carouselBuyBonus.items, ...carouselFrutisGames.items, ...carouselRetro.items];
+    const games = [
+      ...carouselNew.items,
+      ...carouselPopular.items,
+      ...carouselBuyBonus.items,
+      ...carouselFrutisGames.items,
+      ...carouselRetro.items,
+      ...carouselAsianGames.items,
+      ...carouselDrumGamesFirst.items,
+      ...carouselEgyptGames.items,
+      ...carouselOceanGames.items,
+      ...carouselDrumGamesSecond.items,
+      ...carouselMedievalGames.items,
+      ...carouselAlienGames.items,
+      ...carouselDiamondGames.items,
+    ];
+
     console.log("Combined game list:", games);
     categoryStore.setGames(games);
 
@@ -120,6 +207,14 @@ onMounted(() => {
       carouselBuyBonusRef.value = carouselBuyBonus || { items: [] };
       carouselFrutisGamesRef.value = carouselFrutisGames || { items: [] };
       carouselRetroRef.value = carouselRetro || { items: [] };
+      carouselAsianGamesRef.value = carouselAsianGames || { items: [] };
+      carouselDrumGamesFirstRef.value = carouselDrumGamesFirst || { items: [] };
+      carouselEgyptGamesRef.value = carouselEgyptGames || { items: [] };
+      carouselOceanGamesRef.value = carouselOceanGames || { items: [] };
+      carouselDrumGamesSecondRef.value = carouselDrumGamesSecond || { items: [] };
+      carouselMedievalGamesRef.value = carouselMedievalGames || { items: [] };
+      carouselAlienGamesRef.value = carouselAlienGames || { items: [] };
+      carouselDiamondGamesRef.value = carouselDiamondGames || { items: [] };
 
       isLoading.value = false;
     }, 200);

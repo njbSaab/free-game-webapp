@@ -29,7 +29,7 @@
               d="M80 264h40v40H80zm0 128h40v40H80zm128 0h40v40h-40zm-64-64h40v40h-40zm81.456-205.433l39.054-8.644l8.644 39.055l-39.054 8.644zm152.672 97.223l39.054-8.65l8.65 39.054l-39.054 8.65zm-76.324-48.649l39.053-8.65l8.65 39.053l-39.052 8.65z"
             />
           </svg>
-          <h3 class="text-xl">Детали игры</h3>
+          <h3 class="text-xl">게임 정보</h3>
         </div>
 
         <ul class="details-list flex flex-col gap-[10px]">
@@ -37,7 +37,7 @@
           <li
             class="flex justify-between"
           >
-            <p class="text-nj-white-50">Разработчик игр</p>
+            <p class="text-nj-white-50">게임 제공 업체</p>
             <span class="line-transparent"></span>
             <p>{{ details.developers }}</p>
           </li>
@@ -47,7 +47,7 @@
             class="flex justify-between "
             :class="{ 'opacity-50': !details.bonusParches }"
           >
-            <p class="text-nj-white-50">Прогрессивный джекпот</p>
+            <p class="text-nj-white-50">게임 개발사	</p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.jacpot" />
           </li>
@@ -57,7 +57,7 @@
             class="flex justify-between"
             :class="{ 'opacity-50': !details.bonusParches }"
           >
-            <p class="text-nj-white-50">Бесплатные вращения</p>
+            <p class="text-nj-white-50">프로그레시브 잭팟</p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.freeSpeen" />
           </li>
@@ -67,7 +67,7 @@
             class="flex justify-between"
             :class="{ 'opacity-50': !details.bonusParches }"
           >
-            <p class="text-nj-white-50">Автозапуск</p>
+            <p class="text-nj-white-50">프로그레시브 잭팟</p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.autorun" />
           </li>
@@ -77,7 +77,7 @@
             class="flex justify-between"
             :class="{ 'opacity-50': !details.bonusParches }"
           >
-            <p class="text-nj-white-50">Быстрые спины</p>
+            <p class="text-nj-white-50">무료 스핀</p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.quickSpin" />
           </li>
@@ -87,7 +87,7 @@
             class="flex justify-between"
             :class="{ 'opacity-50': !details.bonusParches }"
           >
-            <p class="text-nj-white-50">Покупка бонусов</p>
+            <p class="text-nj-white-50">오토플레이</p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.bonusParches" />
           </li>
@@ -97,7 +97,7 @@
             class="flex justify-between"
             :class="{ 'opacity-50': !details.bonusParches }"
           >
-            <p class="text-nj-white-50">Ставка (мин/макс)</p>
+            <p class="text-nj-white-50">베팅액 (최소 - 최대)</p>
             <span class="line-transparent"></span>
             <p>{{ details.minBind }} / {{ details.maxBind }}</p>
           </li>

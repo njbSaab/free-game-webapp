@@ -97,4 +97,5 @@ const game = reactive({
 .banner .img-wrapper img{
   min-height: 200px;
 }
+
 </style>
