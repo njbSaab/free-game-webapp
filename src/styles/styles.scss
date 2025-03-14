@@ -701,6 +701,11 @@ header {
     }
   }
 }
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 @media screen and (max-width: 768px) {
   .text-sm {
     line-height: 1.1;
