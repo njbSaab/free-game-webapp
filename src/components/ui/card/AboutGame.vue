@@ -15,7 +15,7 @@
         </svg>
         本作について
       </h2>
-      <p class="text-sm text-nj-white-80 title pl-1">{{ description }}</p>
+      <p class="text-sm text-nj-white-80 pl-1">{{ description }}</p>
     </div>
     <div class="about-provider flex-col gap-2 text-start items-start pt-4">
       <!-- <h2 class="text-xl font-bold flex gap-1 items-center">

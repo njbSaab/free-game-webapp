@@ -9,12 +9,12 @@
 
       <!-- Изображение -->
       <div class="img-wrapp rounded-lg mb-[20px] lg:max-w-[500px] mx-auto">
-      <img :src="image" alt="Game Image" class="game-image" />
+        <img :src="image" alt="Game Image" class="game-image" />
       </div>
       <!-- Остальные детали -->
       <div class="card-details-body px-[10px]">
         <div class="title-group flex items-start gap-4 items-center pb-[20px]">
-            <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
@@ -34,70 +34,60 @@
 
         <ul class="details-list flex flex-col gap-[10px]">
           <!-- Разработчик -->
-          <li
-            class="flex justify-between"
-          >
-            <p class="text-nj-white-50">게임 제공 업체</p>
+          <li class="flex justify-between">
+            <p class="text-white">게임 제공 업체</p>
             <span class="line-transparent"></span>
             <p>{{ details.developers }}</p>
           </li>
 
           <!-- Джекпот -->
-          <li
-            class="flex justify-between "
-            :class="{ 'opacity-50': !details.bonusParches }"
-          >
-            <p class="text-nj-white-50">게임 개발사	</p>
+          <li class="flex justify-between">
+            <p class="text-white" :class="{ 'opacity-50': !details.jacpot }">
+              게임 개발사
+            </p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.jacpot" />
           </li>
 
           <!-- Бесплатные вращения -->
-          <li
-            class="flex justify-between"
-            :class="{ 'opacity-50': !details.bonusParches }"
-          >
-            <p class="text-nj-white-50">프로그레시브 잭팟</p>
+          <li class="flex justify-between">
+            <p class="text-white" :class="{ 'opacity-50': !details.freeSpeen }">
+              프로그레시브 잭팟
+            </p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.freeSpeen" />
           </li>
 
           <!-- Автозапуск -->
-          <li
-            class="flex justify-between"
-            :class="{ 'opacity-50': !details.bonusParches }"
-          >
-            <p class="text-nj-white-50">프로그레시브 잭팟</p>
+          <li class="flex justify-between">
+            <p class="text-white" :class="{ 'opacity-50': !details.autorun }">
+              프로그레시브 잭팟
+            </p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.autorun" />
           </li>
 
           <!-- Быстрые спины -->
-          <li
-            class="flex justify-between"
-            :class="{ 'opacity-50': !details.bonusParches }"
-          >
-            <p class="text-nj-white-50">무료 스핀</p>
+          <li class="flex justify-between">
+            <p class="text-white" :class="{ 'opacity-50': !details.quickSpin }">
+              무료 스핀
+            </p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.quickSpin" />
           </li>
 
           <!-- Возможность покупки бонусов -->
-          <li
-            class="flex justify-between"
-            :class="{ 'opacity-50': !details.bonusParches }"
-          >
-            <p class="text-nj-white-50">오토플레이</p>
+          <li class="flex justify-between">
+            <p class="text-white" :class="{ 'opacity-50': !details.bonusParches }">
+              오토플레이
+            </p>
             <span class="line-transparent"></span>
             <IconCheck :isActive="details.bonusParches" />
           </li>
 
           <!-- Минимальная и максимальная ставка -->
-          <li
-            class="flex justify-between"
-            :class="{ 'opacity-50': !details.bonusParches }"
-          >
-            <p class="text-nj-white-50">베팅액 (최소 - 최대)</p>
+          <li class="flex justify-between">
+            <p class="title">베팅액 (최소 - 최대)</p>
             <span class="line-transparent"></span>
             <p>{{ details.minBind }} / {{ details.maxBind }}</p>
           </li>
@@ -115,9 +105,9 @@ defineProps({
     type: String,
     required: true,
   },
-  image:{
+  image: {
     type: String,
-    required: true
+    required: true,
   },
   description: {
     type: String,
@@ -125,7 +115,7 @@ defineProps({
   },
   details: {
     type: Object,
-    default: () => ({})
+    default: () => ({}),
   },
 });
 </script>
@@ -140,9 +130,9 @@ defineProps({
   height: auto;
   border-radius: 8px;
 }
-.line-transparent{
-    position: relative;
-    bottom: -18px;
-    background: linear-gradient(240deg, hsla(0, 0%, 100%, 0.2) 9.92%, transparent);
+.line-transparent {
+  position: relative;
+  bottom: -18px;
+  background: linear-gradient(240deg, hsla(0, 0%, 100%, 0.2) 9.92%, transparent);
 }
 </style>
