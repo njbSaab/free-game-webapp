@@ -10,7 +10,7 @@ export const carouselBuyBonus = {
   },
   items: [
     {
-      id: 14,
+      id: 16,
       title: "Neon Craze",
       iframeSrc: "https://slots.mancalagroup.org/?gameid=64001",
       image:
@@ -65,9 +65,15 @@ export const carouselBuyBonus = {
         tutorila:
           "Чтобы играть бесплатно в демо-режиме, загрузите игру и нажмите кнопку «Вращать». Вы можете узнать больше об игровых автоматах и ​​о том, как они работают, в нашем онлайн-руководстве по игровым автоматам",
       },
+      aboutGame: {
+        provide: "Play'n GO",
+        logo: "https://static.casino.guru/pict/124074/PlayNGo_white.svg?timestamp=1662360394000&imageDataId=368977",
+        gameDescription:
+          "ReactoonzはPlay'n GO製造のスロットです。 こちらのゲームを検索したプレイヤー数によると、Reactoonzはインターネット上で最も人気のあるスロットのうちの一台です。その人気の理由を確かめるためにも、まずは無料版でお試しください。\n\nデモモードで無料でプレイするには、ゲームをロードし、「スピン」ボタンを押すだけです。 さらなるスロットとその仕組みについては、オンラインスロットガイドをご覧ください。",
+      },
     },
     {
-      id: 15,
+      id: 17,
       title: "San Chong Baozha",
       iframeSrc:
         "https://netgamenv.com/netgame_games/db.php?game=san-chong-baozha-red-bonus-combo",
@@ -87,6 +93,12 @@ export const carouselBuyBonus = {
         maxBind: "$400",
         date: "12월 2024",
       },
+      aboutGame: {
+        provide: "Play'n GO",
+        logo: "https://static.casino.guru/pict/124074/PlayNGo_white.svg?timestamp=1662360394000&imageDataId=368977",
+        gameDescription:
+          "ReactoonzはPlay'n GO製造のスロットです。 こちらのゲームを検索したプレイヤー数によると、Reactoonzはインターネット上で最も人気のあるスロットのうちの一台です。その人気の理由を確かめるためにも、まずは無料版でお試しください。\n\nデモモードで無料でプレイするには、ゲームをロードし、「スピン」ボタンを押すだけです。 さらなるスロットとその仕組みについては、オンラインスロットガイドをご覧ください。",
+      },
       statsList: [
         {
           title: "플레이어로 돌아가기", // "Return to Player (RTP)"
@@ -124,7 +136,7 @@ export const carouselBuyBonus = {
       },
     },
     {
-      id: 16,
+      id: 18,
       title: "Snow Wolf Saga",
       iframeSrc:
         "https://cdn.zilliongames.io/snowwolfsaga/latest/index.html?sk=KF44B37UOFLWOXOYY",
@@ -144,6 +156,12 @@ export const carouselBuyBonus = {
         maxBind: "$100",
         date: "12월 2024",
       },
+      aboutGame: {
+        provide: "Play'n GO",
+        logo: "https://static.casino.guru/pict/124074/PlayNGo_white.svg?timestamp=1662360394000&imageDataId=368977",
+        gameDescription:
+          "ReactoonzはPlay'n GO製造のスロットです。 こちらのゲームを検索したプレイヤー数によると、Reactoonzはインターネット上で最も人気のあるスロットのうちの一台です。その人気の理由を確かめるためにも、まずは無料版でお試しください。\n\nデモモードで無料でプレイするには、ゲームをロードし、「スピン」ボタンを押すだけです。 さらなるスロットとその仕組みについては、オンラインスロットガイドをご覧ください。",
+      },
       statsList: [
         {
           title: "플레이어로 돌아가기", // "Return to Player (RTP)"
@@ -181,7 +199,7 @@ export const carouselBuyBonus = {
       },
     },
     {
-      id: 17,
+      id: 19,
       title: "Might of Freya Megaways",
       iframeSrc:
         "https://casinobet.fazi.rs/Home/IntegrationGameLaunchCcy?gameName=VeryHot40Respin&moneyType=0&platform=desktop&languageCode=eng&currency=USD&lobbyUrl=https://1xlite-301033.top/slots",
@@ -223,6 +241,12 @@ export const carouselBuyBonus = {
           body: "윈라인",
         },
       ],
+      aboutGame: {
+        provide: "Play'n GO",
+        logo: "https://static.casino.guru/pict/124074/PlayNGo_white.svg?timestamp=1662360394000&imageDataId=368977",
+        gameDescription:
+          "ReactoonzはPlay'n GO製造のスロットです。 こちらのゲームを検索したプレイヤー数によると、Reactoonzはインターネット上で最も人気のあるスロットのうちの一台です。その人気の理由を確かめるためにも、まずは無料版でお試しください。\n\nデモモードで無料でプレイするには、ゲームをロードし、「スピン」ボタンを押すだけです。 さらなるスロットとその仕組みについては、オンラインスロットガイドをご覧ください。",
+      },
       InfoProviderCardSingle: {
         image: {
           webp: "https://static.casino.guru/res/6f3b4ec2f8e1e19c0e5c5f859d00fabca/images/games/banner-request-game.png?webp=true",
@@ -238,7 +262,7 @@ export const carouselBuyBonus = {
       },
     },
     {
-      id: 18,
+      id: 21,
       title: "Black Bullion Cash Pool",
       iframeSrc:
         "https://netgamenv.com/netgame_games/db.php?game=black-bullion-cash-pool",
@@ -257,6 +281,12 @@ export const carouselBuyBonus = {
         minBind: "$0.2",
         maxBind: "$400",
         date: "12월 2024",
+      },
+      aboutGame: {
+        provide: "Play'n GO",
+        logo: "https://static.casino.guru/pict/124074/PlayNGo_white.svg?timestamp=1662360394000&imageDataId=368977",
+        gameDescription:
+          "ReactoonzはPlay'n GO製造のスロットです。 こちらのゲームを検索したプレイヤー数によると、Reactoonzはインターネット上で最も人気のあるスロットのうちの一台です。その人気の理由を確かめるためにも、まずは無料版でお試しください。\n\nデモモードで無料でプレイするには、ゲームをロードし、「スピン」ボタンを押すだけです。 さらなるスロットとその仕組みについては、オンラインスロットガイドをご覧ください。",
       },
       statsList: [
         {
@@ -295,7 +325,7 @@ export const carouselBuyBonus = {
       },
     },
     {
-      id: 19,
+      id: 22,
       title: "Eve of Gifts",
       iframeSrc:
         "https://prod2.platipusgaming.com/onlinecasino/GetGames/GetGameDemo?demo=true&gameconfig=eveofgifts&lang=EN&lobby=",
@@ -350,9 +380,15 @@ export const carouselBuyBonus = {
         tutorila:
           "Чтобы играть бесплатно в демо-режиме, загрузите игру и нажмите кнопку «Вращать». Вы можете узнать больше об игровых автоматах и ​​о том, как они работают, в нашем онлайн-руководстве по игровым автоматам",
       },
+      aboutGame: {
+        provide: "Play'n GO",
+        logo: "https://static.casino.guru/pict/124074/PlayNGo_white.svg?timestamp=1662360394000&imageDataId=368977",
+        gameDescription:
+          "ReactoonzはPlay'n GO製造のスロットです。 こちらのゲームを検索したプレイヤー数によると、Reactoonzはインターネット上で最も人気のあるスロットのうちの一台です。その人気の理由を確かめるためにも、まずは無料版でお試しください。\n\nデモモードで無料でプレイするには、ゲームをロードし、「スピン」ボタンを押すだけです。 さらなるスロットとその仕組みについては、オンラインスロットガイドをご覧ください。",
+      },
     },
     {
-      id: 20,
+      id: 23,
       title: "Super Ace 2",
       iframeSrc: "https://www.rsg-games.com/TryGame?lang=en-US&gameid=128",
       image:
@@ -369,7 +405,7 @@ export const carouselBuyBonus = {
         bonusParches: false,
         minBind: "$0.2",
         maxBind: "$1,000",
-        date: "12월 2024"
+        date: "12월 2024",
       },
       statsList: [
         {
@@ -405,6 +441,12 @@ export const carouselBuyBonus = {
           "Gates of Olympus Xmas 1000 — игровой автомат, созданный компанией Pragmatic Play . Судя по количеству людей, играющих в этот слот, Gates of Olympus Xmas 1000 — один из самых популярных игровых автоматов в Интернете. Узнайте бесплатно, почему игроки так любят этот игровой автомат.",
         tutorila:
           "Чтобы играть бесплатно в демо-режиме, загрузите игру и нажмите кнопку «Вращать». Вы можете узнать больше об игровых автоматах и ​​о том, как они работают, в нашем онлайн-руководстве по игровым автоматам",
+      },
+      aboutGame: {
+        provide: "Play'n GO",
+        logo: "https://static.casino.guru/pict/124074/PlayNGo_white.svg?timestamp=1662360394000&imageDataId=368977",
+        gameDescription:
+          "ReactoonzはPlay'n GO製造のスロットです。 こちらのゲームを検索したプレイヤー数によると、Reactoonzはインターネット上で最も人気のあるスロットのうちの一台です。その人気の理由を確かめるためにも、まずは無料版でお試しください。\n\nデモモードで無料でプレイするには、ゲームをロードし、「スピン」ボタンを押すだけです。 さらなるスロットとその仕組みについては、オンラインスロットガイドをご覧ください。",
       },
     },
   ],

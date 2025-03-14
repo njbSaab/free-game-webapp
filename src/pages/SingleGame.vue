@@ -63,7 +63,7 @@ const toggleActive = () => {
 </script>
 
 <template>
-  <div v-if="isLoading" class="flex justify-center items-center min-h-screen">
+  <div v-if="!currentGame" class="flex justify-center items-center min-h-screen">
     <IsLoadingBalls />
   </div>
 

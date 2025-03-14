@@ -326,7 +326,7 @@ export const carouselPopular = {
       },
     },
     {
-      id: 6,
+      id: 13,
       title: "Aviator",
       iframeSrc: "https://demo.spribe.io/launch/aviator?currency=USD&lang=EN",
       image:
@@ -388,7 +388,7 @@ export const carouselPopular = {
       },
     },
     {
-      id: 7,
+      id: 14,
       title: "파이어 인 더 홀",
       iframeSrc:
         "https://www.nolimitcity.com/load-game/?game=FireInTheHole&device=desktop",
@@ -451,7 +451,7 @@ export const carouselPopular = {
       },
     },
     {
-      id: 13,
+      id: 15,
       title: "젬스 보난자",
       iframeSrc:
         "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?lang=ko&cur=EUR&gameSymbol=vs20goldfever&jurisdiction=99",

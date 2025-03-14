@@ -89,7 +89,7 @@
           <li class="flex justify-between">
             <p class="title">베팅액 (최소 - 최대)</p>
             <span class="line-transparent"></span>
-            <p>{{ details.minBind }} / {{ details.maxBind }}</p>
+            <p class="text-accent">{{ details.minBind }} / {{ details.maxBind }}</p>
           </li>
         </ul>
       </div>

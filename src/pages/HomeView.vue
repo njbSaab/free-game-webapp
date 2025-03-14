@@ -51,7 +51,9 @@
       <!-- asian games -->
       <GameCarousel
         v-if="
-        carouselAsianGamesRef && carouselAsianGamesRef.items && carouselAsianGamesRef.items.length
+          carouselAsianGamesRef &&
+          carouselAsianGamesRef.items &&
+          carouselAsianGamesRef.items.length
         "
         :data="carouselAsianGamesRef"
       />
@@ -60,31 +62,41 @@
 
       <GameCarousel
         v-if="
-        carouselDrumGamesFirstRef && carouselDrumGamesFirstRef.items && carouselDrumGamesFirstRef.items.length
+          carouselDrumGamesFirstRef &&
+          carouselDrumGamesFirstRef.items &&
+          carouselDrumGamesFirstRef.items.length
         "
         :data="carouselDrumGamesFirstRef"
       />
       <GameCarousel
         v-if="
-        carouselEgyptGamesRef && carouselEgyptGamesRef.items && carouselEgyptGamesRef.items.length
+          carouselEgyptGamesRef &&
+          carouselEgyptGamesRef.items &&
+          carouselEgyptGamesRef.items.length
         "
         :data="carouselEgyptGamesRef"
       />
       <GameCarousel
         v-if="
-        carouselOceanGamesRef && carouselOceanGamesRef.items && carouselOceanGamesRef.items.length
+          carouselOceanGamesRef &&
+          carouselOceanGamesRef.items &&
+          carouselOceanGamesRef.items.length
         "
         :data="carouselOceanGamesRef"
       />
       <GameCarousel
         v-if="
-        carouselDrumGamesSecondRef && carouselDrumGamesSecondRef.items && carouselDrumGamesSecondRef.items.length
+          carouselDrumGamesSecondRef &&
+          carouselDrumGamesSecondRef.items &&
+          carouselDrumGamesSecondRef.items.length
         "
         :data="carouselDrumGamesSecondRef"
       />
       <GameCarousel
         v-if="
-        carouselMedievalGamesRef && carouselMedievalGamesRef.items && carouselMedievalGamesRef.items.length
+          carouselMedievalGamesRef &&
+          carouselMedievalGamesRef.items &&
+          carouselMedievalGamesRef.items.length
         "
         :data="carouselMedievalGamesRef"
       />
@@ -93,13 +105,17 @@
 
       <GameCarousel
         v-if="
-        carouselAlienGamesRef && carouselAlienGamesRef.items && carouselAlienGamesRef.items.length
+          carouselAlienGamesRef &&
+          carouselAlienGamesRef.items &&
+          carouselAlienGamesRef.items.length
         "
         :data="carouselAlienGamesRef"
       />
       <GameCarousel
         v-if="
-        carouselDiamondGamesRef && carouselDiamondGamesRef.items && carouselDiamondGamesRef.items.length
+          carouselDiamondGamesRef &&
+          carouselDiamondGamesRef.items &&
+          carouselDiamondGamesRef.items.length
         "
         :data="carouselDiamondGamesRef"
       />
@@ -136,12 +152,12 @@ import { carouselFrutisGames } from "../data/carousels/frutis_carousel.js";
 import { carouselRetro } from "../data/carousels/retro_carousel.js";
 import { carouselAsianGames } from "../data/carousels/asian_carousel.js";
 import { carouselDrumGamesFirst } from "../data/carousels/drum_carousel-1.js";
-import { carouselEgyptGames } from "../data/carousels/egypt_carousel.js"; 
-import { carouselOceanGames } from "../data/carousels/ocean_carousel.js"; 
+import { carouselEgyptGames } from "../data/carousels/egypt_carousel.js";
+import { carouselOceanGames } from "../data/carousels/ocean_carousel.js";
 import { carouselDrumGamesSecond } from "../data/carousels/drum_carousel-2.js";
-import { carouselMedievalGames } from "../data/carousels/medieval_carousel.js"; 
+import { carouselMedievalGames } from "../data/carousels/medieval_carousel.js";
 import { carouselAlienGames } from "../data/carousels/alien_carousel.js";
-import { carouselDiamondGames } from "../data/carousels/diamond_carousel.js"; 
+import { carouselDiamondGames } from "../data/carousels/diamond_carousel.js";
 
 const router = useRouter();
 const categoryStore = useCategoryStore();
