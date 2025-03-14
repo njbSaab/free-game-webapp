@@ -308,4 +308,6 @@ const toggleActive = () => {
 .container {
   padding: 0;
 }
+.subscribe-card {
+}
 </style>
