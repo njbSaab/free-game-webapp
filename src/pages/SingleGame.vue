@@ -72,7 +72,7 @@ const toggleActive = () => {
       class="info rounded-md nj-bg-card my-10 line text-center mx-auto"
       :class="isActive ? 'w-full' : 'container'"
     >
-      <h2 class="text-xl font-bold mt-[-10px] pb-[20px] px-4">
+      <h2 class="text-xl font-bold mt-[-10px] py-[20px] px-4">
         무료로 <span class="title">{{ currentGame.title }}</span> 을(를) 플레이하십시오
       </h2>
 
@@ -304,5 +304,8 @@ const toggleActive = () => {
 .play-controlls:hover {
   background: linear-gradient(90deg, rgba(0, 149, 255, 0.8), transparent);
   scale: 1.05;
+}
+.container {
+  padding: 0;
 }
 </style>

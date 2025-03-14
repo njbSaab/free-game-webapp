@@ -22,7 +22,7 @@
         ゲームプロバイダーについて
       </h2> -->
       <div class="provider-wrapper flex flex-col justify-between items-center line mt-2">
-        <img :src="logo" alt="provider-logo" class="provider-logo sm:w-[50%] mx-auto" />
+        <img v-if="logo" :src="logo" alt="provider-logo" class="provider-logo sm:w-[50%] mx-auto" />
         <!-- <p class="text-lg">{{ provider }}</p> -->
       </div>
     </div>

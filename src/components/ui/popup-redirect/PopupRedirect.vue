@@ -93,14 +93,17 @@ onUnmounted(() => {
 	left: 47.5%;
 	transform: translate(-50%, -50%);
 	z-index: 10000;
-	width: 90%;
+	width: 35vw;
+  max-height: 70dvh;
 }
 .popup img {
 	width: 100%;
+  max-width: 500px;
 	object-fit: cover;
 	height: auto;
 	object-position: top;
 	transform: translateY(-25%);
+  margin: 0 auto;
 }
 .info{
     margin-top: -55px;
@@ -132,5 +135,10 @@ onUnmounted(() => {
   rotate: 90deg;
   transition: .3s ease-in-out;
 }
-
+@media screen and (max-width: 768px){
+  .popup{
+	width: 80vw;
+  max-height: 50dvh;
+}
+}
 </style>
