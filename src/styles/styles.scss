@@ -285,8 +285,9 @@ a:hover {
   }
 }
 .container {
-  max-width: 1200px;
+  max-width: 1230px !important;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .fs-16 {
   font-size: 16px;
@@ -699,6 +700,11 @@ header {
       opacity: 1;
       transition: 0.3s ease-in-out;
     }
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1200px;
   }
 }
 @media (min-width: 1280px) {
