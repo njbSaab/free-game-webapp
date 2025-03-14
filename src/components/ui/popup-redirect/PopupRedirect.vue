@@ -80,6 +80,7 @@ import { popupRedirectContents } from "@/data/popup/popup-redirect-data"; // И�
 
 const isVisible = ref(false);
 const popupData = ref(popupRedirectContents[0]); // Текущий контент попапа
+
 let popupTimer = null;
 let contentIndex = 0; // Индекс текущего контента
 

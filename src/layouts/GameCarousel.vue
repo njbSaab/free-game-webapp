@@ -23,7 +23,12 @@
         <div class="game-carousel-item rounded-md relative cursor-pointer flex flex-col">
           <div class="image-wrapper rounded-md relative cursor-pointer">
             <span class="play">
-             <img src="../assets/play.png" alt=""> 
+              <img
+                src="../assets/play.png"
+                class="transition-all ease-in"
+                :class="item.id === clickedItemId ? 'skew' : ''"
+                alt=""
+              />
             </span>
             <img
               :src="item.image"
@@ -43,10 +48,10 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useGameStore } from "@/stores/gameStore";
 
-// Получение пропсов
 defineProps({
   data: {
     type: Object,
@@ -54,29 +59,40 @@ defineProps({
   },
 });
 
-// Маршрутизатор и состояние игры
 const router = useRouter();
 const gameStore = useGameStore();
+// Переменная для хранения id нажатого элемента
+const clickedItemId = ref(null);
 
-// Обработчик перехода к игре
 const goToGame = (item) => {
   console.log("Navigating to game:", item);
+  clickedItemId.value = item.id; // Устанавливаем id нажатого элемента
+
   if (!item.id) {
     console.error("Invalid game item, missing ID:", item);
     return;
   }
 
-  router.push({ name: "SingleGame", params: { id: item.id } });
+  // Задержка 1 секунда перед переходом
+  setTimeout(() => {
+    router.push({ name: "SingleGame", params: { id: item.id } });
+    // Сброс значения после перехода (если эффект не нужен после навигации)
+    clickedItemId.value = null;
+  }, 500);
 };
 </script>
 
 <style scoped>
-/* Добавьте стили для оформления */
 .game-carousel-item {
   transition: 0.1s ease-in-out;
 }
 .game-carousel-item:hover {
   scale: 1.02;
+  transition: 0.3s ease-in-out;
+}
+/* Пример эффекта для выбранного элемента */
+.skew {
+  transform: rotate3d(1, 0, 0, 180deg);
   transition: 0.3s ease-in-out;
 }
 </style>

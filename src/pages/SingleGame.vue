@@ -3,19 +3,25 @@ import { computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { useGameStore } from "@/stores/gameStore";
 import { useCategoryStore } from "@/stores/categoryStore";
+
 import CategoryCarousel from "@/layouts/CategoryCarousel.vue";
 import DetailsCard from "@/components/ui/card/DetailsCard.vue";
 import IsLoadingBalls from "@/components/ui/IsLoadingBalls.vue";
 import StatsCard from "@/components/ui/card/StatsCard.vue";
-import { popupRedirectContents } from "@/data/popup/popup-redirect-data";
 import PopupRedirect from "@/components/ui/popup-redirect/PopupRedirect.vue";
 import AboutGame from "@/components/ui/card/AboutGame.vue";
-import { subscribeCardData } from "@/data/card/subscribe_card.js";
 import SubscribeGameCard from "@/components/ui/card/SubscribeGameCard.vue";
+import PopupForm from "@/components/ui/popup-form/PopupForm.vue";
+
+import { popupRedirectContents } from "@/data/popup/popup-redirect-data";
+import { subscribeCardData } from "@/data/card/subscribe_card.js";
+import { popupRedirectFirst } from "@/data/popup/popup-redirect-1";
 
 const subscribeCardDataRef = ref(null);
-
+const popupRedirectFirstRef = ref(null);
 const popupRedirectContentsRef = ref(null);
+// Создаем переменную для управления видимостью попапа
+const isSubscribePopupVisible = ref(false);
 
 const router = useRouter();
 const gameStore = useGameStore();
@@ -33,6 +39,16 @@ const categories = computed(() => categoryStore.categories);
 // Метод для обработки выбора категории
 const filterByCategory = (categoryName) => {
   router.push({ name: "AllGames", query: { category: categoryName.toLowerCase() } });
+};
+
+// Обработчик события открытия попапа
+const handleOpenPopup = () => {
+  isSubscribePopupVisible.value = true;
+};
+
+// Пример закрытия попапа, если его событие close эмитируется из PopupForm
+const handleClosePopup = () => {
+  isSubscribePopupVisible.value = false;
 };
 
 // Инициализация текущей игры
@@ -54,7 +70,9 @@ onMounted(() => {
   isLoading.value = false;
 
   popupRedirectContentsRef.value = popupRedirectContents || null;
-  console.log("statsList:", currentGame.value?.statsList);
+  popupRedirectFirstRef.value = popupRedirectFirst || null;
+
+  // console.log("statsList:", currentGame.value?.statsList);
 });
 
 const toggleActive = () => {
@@ -268,7 +286,17 @@ const toggleActive = () => {
       />
 
       <!-- Карточка бесплатных игр -->
-      <SubscribeGameCard v-if="subscribeCardDataRef" :cardData="subscribeCardDataRef" />
+      <SubscribeGameCard
+        v-if="subscribeCardDataRef"
+        :cardData="subscribeCardDataRef"
+        @openPopup="handleOpenPopup"
+      />
+
+      <PopupForm
+        v-if="isSubscribePopupVisible"
+        :popupData="popupRedirectFirstRef"
+        @close="handleClosePopup"
+      />
 
       <!-- Карусель категорий -->
       <CategoryCarousel

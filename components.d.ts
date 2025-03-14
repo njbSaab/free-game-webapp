@@ -18,6 +18,7 @@ declare module 'vue' {
     IsLoading: typeof import('./src/components/ui/IsLoading.vue')['default']
     IsLoadingBalls: typeof import('./src/components/ui/IsLoadingBalls.vue')['default']
     MenuNav: typeof import('./src/components/ui/navigation/MenuNav.vue')['default']
+    PopupForm: typeof import('./src/components/ui/popup-form/PopupForm.vue')['default']
     PopupRedirect: typeof import('./src/components/ui/popup-redirect/PopupRedirect.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

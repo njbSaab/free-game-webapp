@@ -14,29 +14,33 @@
     </span>
     <div class="info flex flex-col gap-[10px] lg:flex-0 lg:w-[55%]">
       <h3 class="text-xl font-bold title">{{ cardData?.title || 'No Title' }}</h3>
-      <p class="text-sm lg:text-lg text-gray-400">{{ cardData?.description || 'No Description' }}</p>
+      <p class="text-sm lg:text-lg text-gray-400">
+        {{ cardData?.description || 'No Description' }}
+      </p>
       <button
-      class="btn btn-nj-primary mb-2 w-2/3 mx-auto mt-2"
-      @click="onButtonClick"
-      v-if="cardData?.buttonText"
-    >
-      {{ cardData.buttonText }}
-    </button>
+        class="btn btn-nj-primary mb-2 w-2/3 mx-auto mt-2"
+        @click="onButtonClick"
+        v-if="cardData?.buttonText"
+      >
+        {{ cardData.buttonText }}
+      </button>
     </div>
   </div>
 </template>
 
 <script setup>
-defineProps({
+const { cardData } = defineProps({
   cardData: {
     type: Object,
     default: () => ({}),
     required: true,
   },
 });
+const emit = defineEmits(['openPopup']);
 
 const onButtonClick = () => {
   console.log("Button clicked:", cardData?.title || "Unknown Title");
+  emit('openPopup'); // Передаём событие родительскому компоненту
 };
 </script>
 

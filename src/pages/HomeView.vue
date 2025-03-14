@@ -25,7 +25,7 @@
         :data="carouselPopularRef"
       />
       <!-- Карточка бесплатных игр -->
-      <GameCard v-if="tryCardFirstRef" :cardData="tryCardFirstRef" />
+      <GameCard v-if="tryCardFirstRef" :cardData="tryCardFirstRef" @openPopup="handleOpenPopup"/>
       <GameCarousel
         v-if="
           carouselBuyBonusRef &&
@@ -42,7 +42,7 @@
         "
         :data="carouselFrutisGamesRef"
       />
-      <GameCard v-if="tryFeeCardRef" :cardData="tryFeeCardRef" />
+      <GameCard v-if="tryFeeCardRef" :cardData="tryFeeCardRef" @openPopup="handleOpenPopup"/>
 
       <GameCarousel
         v-if="carouselRetroRef && carouselRetroRef.items && carouselRetroRef.items.length"
@@ -57,7 +57,7 @@
         "
         :data="carouselAsianGamesRef"
       />
-      <GameCard v-if="tryCardFirstRef" :cardData="tryCardFirstRef" />
+      <GameCard v-if="tryCardFirstRef" :cardData="tryCardFirstRef" @openPopup="handleOpenPopup"/>
       <!-- asian games -->
 
       <GameCarousel
@@ -101,7 +101,12 @@
         :data="carouselMedievalGamesRef"
       />
 
-      <SubscribeGameCard v-if="subscribeCardDataRef" :cardData="subscribeCardDataRef" />
+      <!-- Другие карточки, которые также эмитят событие openPopup -->
+      <SubscribeGameCard
+        v-if="subscribeCardDataRef"
+        :cardData="subscribeCardDataRef"
+        @openPopup="handleOpenPopup"
+      />
 
       <GameCarousel
         v-if="
@@ -119,7 +124,19 @@
         "
         :data="carouselDiamondGamesRef"
       />
-      <SubscribeGameCard v-if="subscribeCardDataRef" :cardData="subscribeCardDataRef" />
+      <!-- Другие карточки, которые также эмитят событие openPopup -->
+      <SubscribeGameCard
+        v-if="subscribeCardDataRef"
+        :cardData="subscribeCardDataRef"
+        @openPopup="handleOpenPopup"
+      />
+
+      <!-- Единый экземпляр попапа -->
+      <PopupForm
+        v-if="isSubscribePopupVisible"
+        :popupData="popupRedirectFirstRef"
+        @close="handleClosePopup"
+      />
       <Info />
     </div>
   </div>
@@ -133,17 +150,17 @@ import { useRouter } from "vue-router";
 import Banner from "../layouts/Banner.vue";
 import GameCard from "../components/ui/card/InfoGameCard.vue";
 import SubscribeGameCard from "../components/ui/card/SubscribeGameCard.vue";
-
 import Info from "../components/ui/Info.vue";
 import IsLoadingBalls from "../components/ui/IsLoadingBalls.vue";
+import GameCarousel from "../layouts/GameCarousel.vue";
+import CategoryCarousel from "../layouts/CategoryCarousel.vue";
+import PopupForm from "@/components/ui/popup-form/PopupForm.vue";
 
 import { tryFeeCard } from "../data/card/try_free_card.js";
 import { tryCardFirst } from "../data/card/try_card_item-1";
 import { tryCardSecond } from "../data/card/try_card_item-2";
 import { subscribeCardData } from "../data/card/subscribe_card.js";
-
-import GameCarousel from "../layouts/GameCarousel.vue";
-import CategoryCarousel from "../layouts/CategoryCarousel.vue";
+import { popupRedirectFirst } from "@/data/popup/popup-redirect-1.js";
 
 import { carouselNew } from "../data/carousels/new_carousel.js";
 import { carouselBuyBonus } from "../data/carousels/buy_bonus_carousel.js";
@@ -168,6 +185,7 @@ const tryFeeCardRef = ref(null);
 const tryCardFirstRef = ref(null);
 const tryCardSecondRef = ref(null);
 const subscribeCardDataRef = ref(null);
+const popupRedirectFirstRef = ref(null);
 
 // carousel ref value
 const carouselNewRef = ref(null);
@@ -183,6 +201,8 @@ const carouselDrumGamesSecondRef = ref(null);
 const carouselMedievalGamesRef = ref(null);
 const carouselAlienGamesRef = ref(null);
 const carouselDiamondGamesRef = ref(null);
+// Флаг для управления видимостью попапа
+const isSubscribePopupVisible = ref(false);
 
 // Доступ к данным категорий из хранилища
 const categories = computed(() => categoryStore.categories);
@@ -194,6 +214,20 @@ const filterByCategory = (categoryName) => {
   router.push({ name: "AllGames", query: { category: categoryName.toLowerCase() } }); // Переход
 };
 
+// Обработчики открытия и закрытия попапа
+const handleOpenPopup = () => {
+  isSubscribePopupVisible.value = true;
+};
+
+const handleClosePopup = () => {
+  isSubscribePopupVisible.value = false;
+};
+
+onMounted(() => {
+  subscribeCardDataRef.value = subscribeCardData || null;
+  popupRedirectFirstRef.value = popupRedirectFirst || null;
+  // Другие инициализации
+});
 // Загрузка данных при монтировании
 onMounted(() => {
   try {
@@ -222,6 +256,7 @@ onMounted(() => {
       tryCardFirstRef.value = tryCardFirst || null;
       tryCardSecondRef.value = tryCardSecond || null;
       subscribeCardDataRef.value = subscribeCardData || null;
+      popupRedirectFirstRef.value = popupRedirectFirst || null;
 
       carouselNewRef.value = carouselNew || { items: [] };
       carouselPopularRef.value = carouselPopular || { items: [] };
