@@ -23,6 +23,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     StatsCard: typeof import('./src/components/ui/card/StatsCard.vue')['default']
     SubscribeForm: typeof import('./src/components/ui/SubscribeForm.vue')['default']
+    SubscribeGameCard: typeof import('./src/components/ui/card/SubscribeGameCard.vue')['default']
     TutorialCard: typeof import('./src/components/ui/card/TutorialCard.vue')['default']
   }
 }

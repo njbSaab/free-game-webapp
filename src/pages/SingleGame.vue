@@ -10,10 +10,10 @@ import StatsCard from "@/components/ui/card/StatsCard.vue";
 import { popupRedirectContents } from "@/data/popup/popup-redirect-data";
 import PopupRedirect from "@/components/ui/popup-redirect/PopupRedirect.vue";
 import AboutGame from "@/components/ui/card/AboutGame.vue";
-import { tryCardFirst } from "@/data/card/try_card_item-1";
-import GameCard from "@/components/ui/card/InfoGameCard.vue";
+import { subscribeCardData } from "@/data/card/subscribe_card.js";
+import SubscribeGameCard from "@/components/ui/card/SubscribeGameCard.vue";
 
-const tryCardFirstRef = ref(null);
+const subscribeCardDataRef = ref(null);
 
 const popupRedirectContentsRef = ref(null);
 
@@ -37,7 +37,7 @@ const filterByCategory = (categoryName) => {
 
 // Инициализация текущей игры
 onMounted(() => {
-  tryCardFirstRef.value = tryCardFirst || null;
+  subscribeCardDataRef.value = subscribeCardData || null;
 
   // Прокрутить страницу к началу
   window.scrollTo({
@@ -269,7 +269,7 @@ const toggleActive = () => {
       />
 
       <!-- Карточка бесплатных игр -->
-      <GameCard v-if="tryCardFirstRef" :cardData="tryCardFirstRef"/>
+      <SubscribeGameCard v-if="subscribeCardDataRef" :cardData="subscribeCardDataRef" />
 
       <!-- Карусель категорий -->
       <CategoryCarousel

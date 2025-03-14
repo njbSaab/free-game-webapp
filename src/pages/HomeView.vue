@@ -89,7 +89,7 @@
         :data="carouselMedievalGamesRef"
       />
 
-      <GameCard v-if="tryCardSecondRef" :cardData="tryCardSecondRef" />
+      <SubscribeGameCard v-if="subscribeCardDataRef" :cardData="subscribeCardDataRef" />
 
       <GameCarousel
         v-if="
@@ -103,7 +103,7 @@
         "
         :data="carouselDiamondGamesRef"
       />
-      <GameCard v-if="tryCardSecondRef" :cardData="tryCardSecondRef" />
+      <SubscribeGameCard v-if="subscribeCardDataRef" :cardData="subscribeCardDataRef" />
       <Info />
     </div>
   </div>
@@ -116,12 +116,15 @@ import { useRouter } from "vue-router";
 
 import Banner from "../layouts/Banner.vue";
 import GameCard from "../components/ui/card/InfoGameCard.vue";
+import SubscribeGameCard from "../components/ui/card/SubscribeGameCard.vue";
+
 import Info from "../components/ui/Info.vue";
 import IsLoadingBalls from "../components/ui/IsLoadingBalls.vue";
 
 import { tryFeeCard } from "../data/card/try_free_card.js";
 import { tryCardFirst } from "../data/card/try_card_item-1";
 import { tryCardSecond } from "../data/card/try_card_item-2";
+import { subscribeCardData } from "../data/card/subscribe_card.js";
 
 import GameCarousel from "../layouts/GameCarousel.vue";
 import CategoryCarousel from "../layouts/CategoryCarousel.vue";
@@ -148,6 +151,7 @@ const isLoading = ref(true);
 const tryFeeCardRef = ref(null);
 const tryCardFirstRef = ref(null);
 const tryCardSecondRef = ref(null);
+const subscribeCardDataRef = ref(null);
 
 // carousel ref value
 const carouselNewRef = ref(null);
@@ -201,6 +205,7 @@ onMounted(() => {
       tryFeeCardRef.value = tryFeeCard || null;
       tryCardFirstRef.value = tryCardFirst || null;
       tryCardSecondRef.value = tryCardSecond || null;
+      subscribeCardDataRef.value = subscribeCardData || null;
 
       carouselNewRef.value = carouselNew || { items: [] };
       carouselPopularRef.value = carouselPopular || { items: [] };

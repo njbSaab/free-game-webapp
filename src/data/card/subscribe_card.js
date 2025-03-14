@@ -1,4 +1,4 @@
-export const tryCardSecond = {
+export const subscribeCardData = {
   image: {
     webp: "https://i.pinimg.com/originals/14/ab/ef/14abef908b6cbc9e037916d20880e367.gif",
     default:
