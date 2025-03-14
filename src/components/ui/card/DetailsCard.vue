@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card-details bg-nj-card rounded-md mx-2 py-[20px]">
+    <div class="card-details bg-nj-card rounded-md py-[20px]">
       <!-- Заголовок и описание -->
       <div class="card-details-header text-center px-[20px]">
         <h2 class="title text-2xl pb-[20px]">{{ title }}</h2>
@@ -8,7 +8,7 @@
       </div>
 
       <!-- Изображение -->
-      <div class="img-wrapp rounded-lg mb-[20px]">
+      <div class="img-wrapp rounded-lg mb-[20px] lg:max-w-[500px] mx-auto">
       <img :src="image" alt="Game Image" class="game-image" />
       </div>
       <!-- Остальные детали -->

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="banner page-header container game-section-carousel-header flex flex-col lg:flex-row items-center lg:text-start text-center gap-4 pt-[100px]"
+    class="banner page-header container game-section-carousel-header flex flex-col lg:flex-row items-center lg:text-start text-center gap-4 pt-[100px] lg:pt-[10.5vw] lg:pb-[3.5vw]"
   >
   <!-- lg:gap-0 lg:mx-auto -->
     <div class="page-header-heading w-[90%] mx-auto">
@@ -63,7 +63,7 @@
               </div>
             </div>
             <div class="cirlcle-wrapp absolute w-[100%] h-[100%] z-0">
-              <div class="cicrle-img w-[100px] h-[150px]"></div>
+              <div class="cicrle-img w-[100px] h-[150px] lg:w-[20vw]"></div>
             </div>
             <div class="skeleton w-full h-[200px] absolute top-0"></div>
           </div>

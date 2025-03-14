@@ -1,6 +1,8 @@
 <template>
   <div>
     <footer class="nj-dark py-5 px-[.5rem] text-center text-white">
+      <div class="container">
+
       <div class="footer-logo-row py-5 flex items-center">
         <div class="logo-wrapper">
           <img
@@ -13,9 +15,8 @@
       </div>
 
       <MenuNav :sections="navSections" />
-
-
-      <form class="subscribe mt-8 mb-[20px]" action="submit">
+      
+      <!-- <form class="subscribe mt-8 mb-[20px]" action="submit">
         <div
           class="subscribe-form bg-nj-card line flex flex-col md:flex-row text-center md:text-start gap-4 items-center rounded-md p-4 rounded-md bg-nj-card pb-4"
         >
@@ -54,7 +55,7 @@
             </label>
           </div>
         </div>
-      </form>
+      </form> -->
 
       <div class="footer-partners">
         <div class="footer__partners flex flex-wrap justify-center gap-2">
@@ -224,6 +225,7 @@
         </div>
       </div>
       <p class="text-nj-white pt-4 text-xs">© 2024 My Landing. All rights reserved.</p>
+    </div>
     </footer>
   </div>
 </template>

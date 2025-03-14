@@ -15,7 +15,7 @@
 
     <div class="carousel carousel-center w-full py-[20px]">
       <div
-        class="carousel-item nj-hover-shadow flex-shrink-0 mx-1 rounded-md overflow-hidden"
+        class="carousel-item nj-hover-shadow flex-shrink-0 mx-1 rounded-md overflow-hidden lg:max-w-[292px]"
         v-for="(item, index) in data.items"
         :key="index"
         @click="goToGame(item)"

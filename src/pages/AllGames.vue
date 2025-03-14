@@ -55,7 +55,7 @@ const goToGame = (game) => {
 </script>
 
 <template>
-  <div class="all-games min-h-screen" v-auto-animate>
+  <div class="all-games min-h-screen container" v-auto-animate>
     <!-- Баннер -->
     <Banner />
 
@@ -100,8 +100,8 @@ const goToGame = (game) => {
 <style scoped>
 .all-games-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4px 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .no-games-message {
@@ -114,5 +114,11 @@ const goToGame = (game) => {
 }
 .skeleton{
   z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .all-games-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px 10px;
+  }
 }
 </style>

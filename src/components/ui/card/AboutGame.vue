@@ -1,7 +1,7 @@
 <template>
   <div class="px-2">
     <div class="about flex-col gap-2 text-start items-start mt-8">
-      <h2 class="text-xl font-bold mb-3 flex gap-2">
+      <h2 class="text-xl lg:text-2xl font-bold mb-3 flex gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -22,7 +22,7 @@
         ゲームプロバイダーについて
       </h2> -->
       <div class="provider-wrapper flex flex-col justify-between items-center line mt-2">
-        <img :src="logo" alt="provider-logo" class="provider-logo" />
+        <img :src="logo" alt="provider-logo" class="provider-logo sm:w-[50%] mx-auto" />
         <!-- <p class="text-lg">{{ provider }}</p> -->
       </div>
     </div>

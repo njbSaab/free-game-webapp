@@ -1,6 +1,6 @@
 <template>
   <header ref="headerRef" class="header nj-dark text-white">
-    <div class="header-wrapper flex justify-between items-center mb-[-10px]">
+    <div class="header-wrapper flex justify-between items-center mb-[-10px] container">
       <div class="logo-wrapper">
         <router-link to="/">
           <img

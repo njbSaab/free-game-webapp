@@ -33,7 +33,7 @@ const selectCategory = (categoryName) => {
     <!-- Проверка на наличие элементов -->
     <div v-if="items.length" class="carousel px-1 carousel-center w-full py-[15px]">
       <div
-        class="carousel-item mx-w-[250px] w-[25%] flex-shrink-0 mx-1 flex flex-col items-center justify-center gap-1 bg-nj-card rounded-md py-2 px-1 nj-hover-shadow nj-hover-scale cursor-pointer"
+        class="carousel-item mx-w-[250px] w-[25%] lg:w-[10%] flex-shrink-0 mx-1 flex flex-col items-center justify-center gap-1 bg-nj-card rounded-md py-4 px-1 nj-hover-shadow nj-hover-scale cursor-pointer"
         v-for="(item, index) in items"
         :key="index"
         @click="selectCategory(item.name)"
@@ -48,9 +48,7 @@ const selectCategory = (categoryName) => {
           <img v-else :src="item.image" alt="Game Icon" />
         </div>
         <span class="category-name text-nj-white">{{ item.name }}</span>
-        <span class="category-count text-sm text-nj-white-50">
-          ({{ item.count }})
-        </span>
+        <span class="category-count text-sm text-nj-white-50"> ({{ item.count }}) </span>
       </div>
     </div>
     <p v-else class="text-center text-nj-white">No categories available</p>
