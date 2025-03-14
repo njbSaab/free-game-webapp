@@ -55,7 +55,6 @@ onMounted(() => {
 
   popupRedirectContentsRef.value = popupRedirectContents || null;
   console.log("statsList:", currentGame.value?.statsList);
-
 });
 
 const toggleActive = () => {
@@ -76,7 +75,7 @@ const toggleActive = () => {
       <h2 class="text-xl font-bold mt-[-10px] pb-[20px] px-4">
         무료로 <span class="title">{{ currentGame.title }}</span> 을(를) 플레이하십시오
       </h2>
-    
+
       <div
         class="play-controlls absolute w-[10vw] px-2 flex items-cetert justify-center"
         @click="toggleActive"
@@ -281,13 +280,12 @@ const toggleActive = () => {
         v-if="popupRedirectContentsRef"
         :popupData="popupRedirectContentsRef"
       />
-
     </div>
   </section>
 </template>
 
 <style scoped>
-.game-page .card-request-game{
+.game-page .card-request-game {
   margin-bottom: 0px !important;
 }
 .line {

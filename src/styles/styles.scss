@@ -168,6 +168,16 @@ a:hover {
 .cicrle-img {
   position: relative;
 }
+.game-list-top-carousel-wrapper {
+  // box-shadow:
+  //   // 0 0 0px 10px rgba(0, 149, 255, 0.8),
+  //   0 0 20px 10px rgba(0, 149, 255, 0.8),
+  //   0 0 40px 20px rgba(0, 149, 255, 0.5),
+  //   0 0 80px 40px rgba(0, 149, 255, 0.4);
+  animation: shadowPulseBanner 6s infinite ease-in;
+  // 0 0 100px 70px rgba(0, 149, 255, 0.2);
+  border-radius: 45%;
+}
 .cicrle-img:before {
   content: "";
   position: absolute;
@@ -177,14 +187,14 @@ a:hover {
     0 0 40px 20px rgba(0, 149, 255, 0.8),
     0 0 80px 40px rgba(0, 149, 255, 0.8),
     0 0 100px 70px rgba(0, 149, 255, 0.8);
-  width: 150%;
-  height: 175px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  backdrop-filter: blur(60px);
-  border-radius: 100%;
+  // width: 150%;
+  // height: 175%;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // z-index: -1;
+  // backdrop-filter: blur(60px);
+  // border-radius: 100%;
 }
 .active:after {
   background: linear-gradient(90deg, rgba(0, 149, 255, 0.424), transparent);
@@ -574,11 +584,25 @@ a:hover {
   }
 }
 
+@keyframes shadowPulseBanner {
+  0% {
+    box-shadow: 0px 0px 5px rgba(0, 149, 255, 0.1);
+  }
+  50% {
+    box-shadow:
+      0px 25px 40px rgba(0, 149, 255, 1),
+      0px -25px 40px rgba(0, 149, 255, 1);
+  }
+  100% {
+    box-shadow: 0px 0px 5px rgba(0, 149, 255, 0.1);
+  }
+}
+
 header.nj-dark,
 footer.nj-dark,
 .popup {
   box-shadow: 0px 0px 0px rgba(0, 149, 255, 0);
-  animation: shadowPulse 8s infinite ease-out;
+  animation: shadowPulse 6s infinite ease-in;
 }
 
 header .footer-line,
