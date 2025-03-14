@@ -62,9 +62,9 @@
                 </a>
               </div>
             </div>
-            <div class="cirlcle-wrapp absolute w-[100%] h-[100%] z-0">
+            <!-- <div class="cirlcle-wrapp absolute w-[100%] h-[100%] z-0">
               <div class="cicrle-img w-[100px] h-[150px] lg:w-[26vw]"></div>
-            </div>
+            </div> -->
             <div class="skeleton w-full h-[200px] absolute top-0"></div>
           </div>
         </div>

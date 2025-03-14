@@ -745,4 +745,30 @@ header {
   .game-carousel .carousel-item {
     max-width: 250px;
   }
+  .container {
+    padding: 0px;
+  }
+  .fs-30 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .banner.container {
+    padding-top: 130px;
+    padding-bottom: 30px;
+  }
+  .play-controlls {
+    display: none;
+  }
+  .subscribe-card {
+    height: auto;
+  }
+  .subscribe-card img {
+    max-width: 200px;
+    height: auto;
+    top: 0;
+  }
+  .text-sm {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
