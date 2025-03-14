@@ -2,7 +2,7 @@
   <div class="home container" v-auto-animate>
     <Banner />
     <!-- Спиннер отображается, пока идет загрузка -->
-    <IsLoadingBalls v-if="isLoading" />
+    <IsLoading v-if="isLoading" />
 
     <!-- Контент отображается, когда загрузка завершена -->
     <div v-else>
@@ -151,7 +151,7 @@ import Banner from "../layouts/Banner.vue";
 import GameCard from "../components/ui/card/InfoGameCard.vue";
 import SubscribeGameCard from "../components/ui/card/SubscribeGameCard.vue";
 import Info from "../components/ui/Info.vue";
-import IsLoadingBalls from "../components/ui/IsLoadingBalls.vue";
+import IsLoading from "../components/ui/IsLoading.vue";
 import GameCarousel from "../layouts/GameCarousel.vue";
 import CategoryCarousel from "../layouts/CategoryCarousel.vue";
 import PopupForm from "@/components/ui/popup-form/PopupForm.vue";

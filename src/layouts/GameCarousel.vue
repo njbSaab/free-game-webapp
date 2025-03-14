@@ -92,7 +92,7 @@ const goToGame = (item) => {
 }
 /* Пример эффекта для выбранного элемента */
 .skew {
-  transform: translateX(20vw) rotate(90deg);
+  transform: translateX(40vw) rotate(90deg);
   transition: 0.4s ease-in-out;
 }
 </style>
