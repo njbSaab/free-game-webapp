@@ -71,7 +71,7 @@
             </div>
           </div>
         </div>
-        <p class="text-nj-white pt-4 text-xs">© 2024 My Landing. All rights reserved.</p>
+        <p class="text-nj-white-50 pt-4 text-xs">© 2025 Free Slot Casino. All rights reserved.</p>
       </div>
     </footer>
   </div>

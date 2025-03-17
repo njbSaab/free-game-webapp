@@ -710,6 +710,50 @@ header {
     }
   }
 }
+.category-carousel {
+  .carousel__track {
+    // gap: 8px;
+    padding: 25px 0;
+  }
+  .carousel__icon {
+    fill: #007bff;
+    background: linear-gradient(90deg, #2d3c5e, #1b2642);
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+    &:hover {
+      box-shadow: 0 0 15px #007bff;
+      transition: all 0.3s ease-in;
+    }
+    &:active {
+      scale: 0.95;
+      transition: all 0.1s ease-in;
+      box-shadow: 0 0 10px #007bff88;
+    }
+  }
+  .carousel__pagination-button--active {
+    background-color: #007bff;
+  }
+  .carousel__pagination {
+    bottom: 0;
+  }
+  .carousel__pagination-button {
+    border-radius: 6px;
+    padding: 3px;
+  }
+  .carousel__viewport {
+    margin: 0 50px;
+  }
+  .carousel__track {
+    width: 100% !important;
+  }
+  .carousel__prev {
+    margin-left: 12px;
+  }
+  .carousel__next {
+    margin-right: 12px;
+  }
+}
+
 @media (min-width: 1536px) {
   .container {
     max-width: 1200px;
