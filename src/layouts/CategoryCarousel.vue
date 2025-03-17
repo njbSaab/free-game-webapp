@@ -31,7 +31,7 @@ const carouselConfig = {
     },
     1024: {
       itemsToShow: 8, // Большие экраны: 8 элементов
-      snapAlign: "start",
+      snapAlign: "end",
       gap: 12,
     },
   },
