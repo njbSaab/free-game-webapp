@@ -21,12 +21,12 @@ const items = computed(() => props.data?.items || []);
 
 // Конфигурация карусели
 const carouselConfig = {
-  itemsToShow: 2, // Мобильные: 2 элемента
+  itemsToShow: 4, // Мобильные: 2 элемента
   wrapAround: true,
   snapAlign: "start",
   breakpoints: {
     768: {
-      itemsToShow: 4, // Средние экраны: 4 элемента
+      itemsToShow: 6, // Средние экраны: 4 элемента
       snapAlign: "start",
     },
     1024: {
@@ -114,7 +114,4 @@ const selectCategory = (categoryName) => {
   margin: 0 4px;
 }
 
-.carousel__pagination-button--active {
-  background-color: #007bff; /* Цвет активной точки */
-}
 </style>

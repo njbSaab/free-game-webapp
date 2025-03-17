@@ -49,10 +49,10 @@ export const providersImg = [
     altText: "Spribe",
   },
   {
-    webp: "https://static.casino.guru/pict/124056/NoLimit_dark-1.svg?timestamp=1733241096000&imageDataId=1087148?webp=true",
+    webp: "https://static.casino.guru/pict/834021/DreamPlay_White.svg?timestamp=1741009257000&imageDataId=1221721",
     default:
-      "https://static.casino.guru/pict/124056/NoLimit_dark-1.svg?timestamp=1733241096000&imageDataId=1087148",
-    altText: "Nolimit City",
+      "https://static.casino.guru/pict/834021/DreamPlay_White.svg?timestamp=1741009257000&imageDataId=1221721",
+    altText: "DreamPlay",
   },
   {
     webp: "https://static.casino.guru/pict/136002/Mancala_white.svg?timestamp=1663484798000&imageDataId=374714?webp=true",

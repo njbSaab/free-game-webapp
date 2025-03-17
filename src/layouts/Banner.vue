@@ -5,7 +5,7 @@
   <!-- lg:gap-0 lg:mx-auto -->
     <div class="page-header-heading w-[90%] mx-auto">
       <!-- lg:w-1/2 -->
-      <h1 class="fs-30 c-white text-default title">무료 온라인 슬롯 및 카지노 게임</h1>
+      <h1 class="fs-30 c-white text-default title banner-title">무료 온라인 슬롯 및 카지노 게임</h1>
       <!-- Описание -->
       <div class="desc fs-16 mt-4">
         슬롯 머신 및 기타 유형의 카지노 게임을 무료로 즐겨보세요. ✅ 다운로드 및 등록이
