@@ -78,7 +78,7 @@ const goToGame = (item) => {
     router.push({ name: "SingleGame", params: { id: item.id } });
     // Сброс значения после перехода (если эффект не нужен после навигации)
     clickedItemId.value = null;
-  }, 500);
+  }, 400);
 };
 </script>
 
@@ -93,6 +93,6 @@ const goToGame = (item) => {
 /* Пример эффекта для выбранного элемента */
 .skew {
   transform: translateX(40vw) rotate(90deg);
-  transition: 0.4s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 </style>

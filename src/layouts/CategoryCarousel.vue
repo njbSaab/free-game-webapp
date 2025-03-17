@@ -33,7 +33,7 @@ const selectCategory = (categoryName) => {
     <!-- Проверка на наличие элементов -->
     <div v-if="items.length" class="carousel px-1 carousel-center w-full py-[15px]">
       <div
-        class="carousel-item mx-w-[250px] w-[25%] lg:w-[10%] flex-shrink-0 mx-1 flex flex-col items-center justify-center gap-1 bg-nj-card rounded-md py-4 px-1 nj-hover-shadow nj-hover-scale cursor-pointer"
+        class="carousel-item mx-w-[250px] w-[25%] lg:w-[9.8%] flex-shrink-0 mx-1 flex flex-col items-center justify-center gap-1 bg-nj-card rounded-md py-4 px-1 nj-hover-shadow nj-hover-scale cursor-pointer"
         v-for="(item, index) in items"
         :key="index"
         @click="selectCategory(item.name)"
