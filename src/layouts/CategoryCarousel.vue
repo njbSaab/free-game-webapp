@@ -23,6 +23,7 @@ const items = computed(() => props.data?.items || []);
 const carouselConfig = {
   itemsToShow: 4, // Мобильные: 2 элемента
   wrapAround: true,
+  gap:4,
   snapAlign: "end",
   breakpoints: {
     768: {

@@ -910,7 +910,14 @@ header {
     line-height: 1.2;
   }
   .category-carousel .carousel__viewport {
-    margin: 0 30px;
+    margin: 0 auto;
+    margin-right: 15px;
+  }
+  .category-carousel .carousel__prev{
+    margin-left: 0;
+  }
+  .category-carousel .carousel__next{
+    margin-right: 0;
   }
   .game-carousel .carousel__icon {
     fill: #ffffff;
