@@ -931,4 +931,13 @@ header {
     width: 27px;
     height: 27px;
   }
+  .play{
+    width: 48px;
+    height: 48px;
+  }
+  .image-wrapper:after{
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(45deg, #1b2642, rgba(136, 39, 226, 0.3666666667))
+  }
 }
