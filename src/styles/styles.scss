@@ -919,8 +919,16 @@ header {
   .category-carousel .carousel__next{
     margin-right: 0;
   }
+  .category-carousel .carousel__item{
+    padding-top: 10px !important;
+    padding-bottom: 7px !important;
+  }
   .game-carousel .carousel__icon {
     fill: #ffffff;
     background: linear-gradient(90deg, #2d3c5e, #007bff);
+  }
+  .category-carousel .game-icon {
+    width: 27px;
+    height: 27px;
   }
 }
