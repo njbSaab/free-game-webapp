@@ -1,7 +1,7 @@
 export const carouselPopular = {
   title: {
     image: "https://free-games-img.netlify.app/img/main-carousel/popular.svg",
-    text: " 한국에서 가장 인기 있는 게임들",
+    text: "인기 있는 게임들",
     textShort: "인기 있는 게임들",
   },
   button: {

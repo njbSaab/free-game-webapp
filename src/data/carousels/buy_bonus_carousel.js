@@ -2,7 +2,7 @@ export const carouselBuyBonus = {
   title: {
     image: "https://free-games-img.netlify.app/img/main-carousel/bonus.svg",
     text: "보너스 구매 슬롯",
-    textShort: "보너스 슬롯",
+    textShort: "보너스 구매 슬롯",
   },
   button: {
     text: "모두 표시",
