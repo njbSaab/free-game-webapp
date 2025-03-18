@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="info rounded-md nj-bg-card mx-2 my-10 line">
-      <div class="container">
+      <div class="container-lg">
         <div class="col-text typography">
           <p>
             <font style="vertical-align: inherit">

@@ -1,5 +1,5 @@
 <template>
-  <div class="home container" v-auto-animate>
+  <div class="home" v-auto-animate>
     <Banner />
     <!-- Спиннер отображается, пока идет загрузка -->
     <IsLoading v-if="isLoading" />

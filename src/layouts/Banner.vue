@@ -1,6 +1,6 @@
 <template>
   <div
-    class="banner page-header container game-section-carousel-header flex flex-col lg:flex-row items-center lg:text-start text-center gap-4 pt-[100px] lg:pt-[10.5vw] lg:pb-[3.5vw]"
+    class="banner page-header container-lg game-section-carousel-header flex flex-col lg:flex-row items-center lg:text-start text-center gap-4 pt-[100px] lg:pt-[10.5vw] lg:pb-[3.5vw]"
   >
   <!-- lg:gap-0 lg:mx-auto -->
     <div class="page-header-heading w-[90%] mx-auto">

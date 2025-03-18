@@ -1,4 +1,6 @@
 <template>
+  <div class="container">
+
   <div
     class="card-request-game subscribe-card flex flex-col md:flex-row md:justify-evenly text-center md:text-start gap-4 items-center rounded-md p-2 lg:px-4 lg:py-[30px] bg-nj-card my-10 mt-0 mx-2 h-[350px]"
   >
@@ -26,6 +28,8 @@
       </button>
     </div>
   </div>
+</div>
+
 </template>
 
 <script setup>

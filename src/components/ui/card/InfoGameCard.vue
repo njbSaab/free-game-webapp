@@ -1,4 +1,5 @@
 <template>
+<div class="container">
   <div
     class="card-request-game flex flex-col md:flex-row md:justify-evenly text-center md:text-start items-center rounded-md p-2 lg:px-4 lg:py-[30px] bg-nj-card my-10 mt-0 mx-2"
   >
@@ -26,6 +27,8 @@
       </button>
     </div>
   </div>
+</div>
+
 </template>
 
 <script setup>

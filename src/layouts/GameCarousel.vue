@@ -1,7 +1,7 @@
 <template>
-  <div class="game-carousel my-[20px]" v-auto-animate>
+  <div class="game-carousel my-[20px] container-lg" v-auto-anmate >
     <!-- Заголовок и кнопка "See All Games" -->
-    <div class="carousel-title px-2 flex justify-between items-center">
+    <div class="carousel-title px-2 flex justify-between items-center container">
       <div class="carousel-title-wrapper flex items-center pr-[10px] space-x-2">
         <img :src="data.title.image" alt="Carousel Title Image" class="h-8 w-8" />
         <h1 class="text-lg carousel-title font-bold">{{ data.title.text }}</h1>
@@ -101,6 +101,8 @@ const carouselConfig = {
   itemsToShow: 2,
   wrapAround: true,
   snapAlign: "start",
+  itemsToScroll: 1, // Прокручивать по 1 элементу
+
   // Настройки для разных брейкпоинтов
   breakpoints: {
     768: {
@@ -121,12 +123,16 @@ const carouselConfig = {
 </script>
 
 <style scoped>
+.carousel__viewport{
+
+}
 .game-carousel-item {
   transition: 0.1s ease-in-out;
 }
 .carousel__prev {
   position: relative;
 }
+
 .carousel__prev::after {
   position: absolute;
   content: "";
@@ -161,6 +167,7 @@ const carouselConfig = {
 .carousel__slide {
   width: fit-content !important;
 }
+
 @media screen and (max-width: 500px) {
   .carousel__slide {
   width: 48% !important;

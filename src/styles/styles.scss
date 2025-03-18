@@ -48,6 +48,11 @@ h4 {
 .nj-main-dark {
   background-color: #1b2642;
 }
+.home {
+  max-width: 1480px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 .title {
   text-shadow:
     0 0 10px rgba(0, 183, 255, 0.7),
@@ -293,8 +298,8 @@ a:hover {
   margin: 0 auto;
   padding: 0 15px;
 }
-.banner.container {
-  padding-top: 150px;
+.banner.container-lg {
+  padding-top: 175px;
   padding-bottom: 50px;
 }
 .fs-16 {
@@ -528,6 +533,7 @@ a:hover {
 .card-request-game {
   cursor: pointer;
   transition: 0.1s ease-in;
+  margin-top: 30px !important;
 }
 .card-request-game img {
   width: 300px;
@@ -766,6 +772,12 @@ header {
     margin-right: 12px;
   }
 }
+.container-lg {
+  max-width: 1380px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px;
+}
 .game-carousel {
   .carousel {
     width: 100%;
@@ -788,16 +800,21 @@ header {
   .carousel__pagination-button--active {
     background-color: #007bff; /* Цвет активной точки */
   }
-  .carousel__icon {
-    fill: #007bff;
-    background: linear-gradient(90deg, #2d3c5e, #1b2642);
-    border-radius: 20px;
-    transition: all 0.3s ease-in;
-  }
   .carousel__viewport {
-    margin: 20px 0;
+    max-width: 1200px !important;
+    max-width: 1200px !important;
+    margin: 20px auto;
     padding: 20px 0;
   }
+  .carousel__next {
+    margin-right: 12px;
+  }
+  .carousel__prev {
+    margin-left: 12px;
+  }
+}
+.carousel {
+  overflow-x: hidden;
 }
 @media (min-width: 1536px) {
   .container {
@@ -867,5 +884,9 @@ header {
   }
   .category-carousel .carousel__viewport {
     margin: 0 30px;
+  }
+  .game-carousel .carousel__icon {
+    fill: #ffffff;
+    background: linear-gradient(90deg, #2d3c5e, #007bff);
   }
 }
