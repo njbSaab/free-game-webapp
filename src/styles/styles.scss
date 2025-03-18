@@ -481,7 +481,7 @@ a:hover {
   background: linear-gradient(45deg, #1b2642, #8827e2aa);
 }
 .line[data-v-2ee1f18c] {
-  padding: 35px 0 0;
+  padding: 15px 0 0;
   margin-bottom: -1px !important;
 }
 /* .games-box-game {
@@ -767,6 +767,9 @@ header {
   }
 }
 .game-carousel {
+  .carousel {
+    width: 100%;
+  }
   .carousel__icon {
     fill: #007bff;
     background: linear-gradient(90deg, #2d3c5e, #1b2642);
@@ -832,9 +835,10 @@ header {
   .category-carousel .carousel-item {
     padding: 10px 5px !important;
   }
-  .game-carousel .carousel-item {
-    max-width: 250px;
-  }
+  // .game-carousel .carousel-item {
+  //   max-width: 250px;
+  // }
+
   .container {
     padding: 0px;
   }

@@ -23,16 +23,19 @@ const items = computed(() => props.data?.items || []);
 const carouselConfig = {
   itemsToShow: 4, // Мобильные: 2 элемента
   wrapAround: true,
-  snapAlign: "start",
+  snapAlign: "end",
   breakpoints: {
     768: {
+      wrapAround: true,
       itemsToShow: 6, // Средние экраны: 4 элемента
-      snapAlign: "start",
+      snapAlign: "end",
     },
     1024: {
+      wrapAround: true,
       itemsToShow: 8, // Большие экраны: 8 элементов
       snapAlign: "end",
       gap: 12,
+      
     },
   },
 };

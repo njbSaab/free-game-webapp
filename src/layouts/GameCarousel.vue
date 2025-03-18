@@ -39,7 +39,9 @@
               class="rounded-md cursor-pointer min-h-[150px]"
             />
           </div>
-          <h3 class="title text-xl text-center px-2 flex-1 flex items-center justify-center pb-1 my-[10px]">
+          <h3
+            class="title text-xl text-center px-2 flex-1 flex items-center justify-center pb-1 my-[10px]"
+          >
             {{ item.title }}
           </h3>
         </div>
@@ -104,11 +106,15 @@ const carouselConfig = {
     768: {
       itemsToShow: 3, // средние экраны
       snapAlign: "start",
+      wrapAround: true,
+      itemsToScroll: 1, // Прокручивать по 1 элементу
     },
     1024: {
       itemsToShow: 4, // большие экраны
       snapAlign: "start",
       gap: 0,
+      wrapAround: true,
+      itemsToScroll: 1, // Прокручивать по 1 элементу
     },
   },
 };
@@ -118,12 +124,12 @@ const carouselConfig = {
 .game-carousel-item {
   transition: 0.1s ease-in-out;
 }
-.carousel__prev{
+.carousel__prev {
   position: relative;
 }
-.carousel__prev::after{
+.carousel__prev::after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../assets/play.png);
   width: 100%;
   max-width: 120px;
@@ -138,8 +144,8 @@ const carouselConfig = {
   transition: 0.5s ease-in-out;
 }
 .carousel__viewport {
-	margin: 40px 0;
-	padding: 12px 0;
+  margin: 40px 0;
+  padding: 12px 0;
 }
 /* Можно добавить стили для пагинации, стрелок, если нужно */
 .carousel__pagination-button {
@@ -151,5 +157,13 @@ const carouselConfig = {
 }
 .carousel__pagination-button--active {
   background-color: #007bff;
+}
+.carousel__slide {
+  width: fit-content !important;
+}
+@media screen and (max-width: 500px) {
+  .carousel__slide {
+  width: 48% !important;
+}
 }
 </style>
