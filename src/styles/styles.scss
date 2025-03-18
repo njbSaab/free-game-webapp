@@ -827,6 +827,33 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .home{
+    padding: 0;
+  }
+  .container-lg{
+    padding: 0;
+  }
+  .banner{
+    .w-\[90\%\]{
+      width: 95%;
+    }
+  }
+  .carousel{
+    padding: 0 10px;
+  }
+  .game-carousel .carousel__next{
+    margin-right: 0;
+  }
+  .game-carousel .carousel__prev{
+    margin-left: 0;
+  }
+  .game-carousel .carousel__pagination{
+    bottom: 20px;
+  }
+  .banner.container-lg{
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
   .text-sm {
     line-height: 1.1;
   }
