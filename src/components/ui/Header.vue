@@ -108,7 +108,7 @@ onBeforeUnmount(() => {
   backdrop-filter: blur(2px);
   opacity: 1;
   transition: .3s ease-in;
-  z-index: 11111;
+  z-index: 1111;
 }
 .overlay-non{
   opacity: 0;
