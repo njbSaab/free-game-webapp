@@ -5,11 +5,10 @@
   <!-- lg:gap-0 lg:mx-auto -->
     <div class="page-header-heading w-[90%] mx-auto">
       <!-- lg:w-1/2 -->
-      <h1 class="fs-30 c-white text-default title banner-title">무료 온라인 슬롯 및 카지노 게임</h1>
+      <h1 class="fs-30 c-white text-default title banner-title">{{ bannerContent.title }}</h1>
       <!-- Описание -->
       <div class="desc fs-16 mt-4">
-        슬롯 머신 및 기타 유형의 카지노 게임을 무료로 즐겨보세요. <br> ✅ 다운로드 및 등록이
-        필요하지 않습니다. <br> ✅ 데모 모드에서 리스크 없이 플레이 해보세요.
+        {{ bannerContent.description }}
       </div>
     </div>
 
@@ -86,11 +85,18 @@ const carouselImage = reactive({
     "https://free-games-img.netlify.app/img/banners/image1.jpg",
 });
 
+
 // Данные игры
 const game = reactive({
   name: "Divine Wine",
   provider: "Atomic Slot Lab",
 });
+
+const bannerContent = reactive({
+  title: "무료 온라인 슬롯 및 카지노 게임",
+  description:
+    "슬롯 머신 및 기타 유형의 카지노 게임을 무료로 즐겨보세요. <br> ✅ 다운로드 및 등록이 필요하지 않습니다. <br> ✅ 데모 모드에서 리스크 없이 플레이 해보세요.",
+})
 </script>
 
 <style scoped>

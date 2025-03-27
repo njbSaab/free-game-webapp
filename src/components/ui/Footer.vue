@@ -61,7 +61,6 @@
             class="footer__partner w-[20%] lg:w-[15%] nj-hover-shadow rounded-lg cursor-pointer"
             v-for="(provider, index) in providersImg"
             :key="index"
-            
           >
             <div class="providers-wrapper mx-w-[250px] relative">
               <img :src="provider.default" :alt="provider.altText" />
@@ -71,7 +70,9 @@
             </div>
           </div>
         </div>
-        <p class="text-nj-white-50 pt-4 text-xs">© 2025 Free Slot Casino. All rights reserved.</p>
+        <p class="text-nj-white-50 pt-4 text-xs">
+          © 2025 Free Slot Casino. All rights reserved.
+        </p>
       </div>
     </footer>
   </div>
@@ -84,25 +85,24 @@ import { providersImg } from "@/data/providers/providers-img.js";
 
 <style lang="scss" scoped>
 .providers-wrapper {
-  &::after{
+  &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     background: #1b2642d4;
     z-index: 1;
     left: 0;
     top: 0;
-    transition: all .3s ease-in-out;
-
+    transition: all 0.3s ease-in-out;
   }
-  &:hover{
-    &::after{
-    background: transparent;
-    transition: all .3s ease-in-out;
+  &:hover {
+    &::after {
+      background: transparent;
+      transition: all 0.3s ease-in-out;
+    }
   }
-  }
-  p{
+  p {
     display: none;
   }
 }
